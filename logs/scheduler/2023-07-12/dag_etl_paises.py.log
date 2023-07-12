@@ -19875,3 +19875,31 @@ ModuleNotFoundError: No module named 'pg8000'
 [2023-07-12 05:46:23,381] {logging_mixin.py:115} INFO - [2023-07-12 05:46:23,381] {dag.py:2420} INFO - Sync 1 DAGs
 [2023-07-12 05:46:23,625] {logging_mixin.py:115} INFO - [2023-07-12 05:46:23,623] {dag.py:2972} INFO - Setting next_dagrun for dag_con_conexion_postgres to 2023-07-12T00:00:00+00:00, run_after=2023-07-13T00:00:00+00:00
 [2023-07-12 05:46:23,723] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.529 seconds
+[2023-07-12 05:46:33,845] {processor.py:153} INFO - Started process (PID=881) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-12 05:46:33,847] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-12 05:46:33,850] {logging_mixin.py:115} INFO - [2023-07-12 05:46:33,850] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-12 05:46:34,445] {processor.py:651} INFO - DAG(s) dict_keys(['dag_con_conexion_postgres']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-12 05:46:34,556] {logging_mixin.py:115} INFO - [2023-07-12 05:46:34,556] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-12 05:46:34,641] {logging_mixin.py:115} INFO - [2023-07-12 05:46:34,641] {dag.py:2972} INFO - Setting next_dagrun for dag_con_conexion_postgres to 2023-07-12T00:00:00+00:00, run_after=2023-07-13T00:00:00+00:00
+[2023-07-12 05:46:34,679] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.850 seconds
+[2023-07-12 05:46:44,806] {processor.py:153} INFO - Started process (PID=886) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-12 05:46:44,813] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-12 05:46:44,821] {logging_mixin.py:115} INFO - [2023-07-12 05:46:44,821] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-12 05:46:45,169] {processor.py:651} INFO - DAG(s) dict_keys(['dag_con_conexion_postgres']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-12 05:46:45,232] {logging_mixin.py:115} INFO - [2023-07-12 05:46:45,231] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-12 05:46:45,342] {logging_mixin.py:115} INFO - [2023-07-12 05:46:45,342] {dag.py:2972} INFO - Setting next_dagrun for dag_con_conexion_postgres to 2023-07-12T00:00:00+00:00, run_after=2023-07-13T00:00:00+00:00
+[2023-07-12 05:46:45,379] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.580 seconds
+[2023-07-12 05:46:55,478] {processor.py:153} INFO - Started process (PID=891) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-12 05:46:55,481] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-12 05:46:55,484] {logging_mixin.py:115} INFO - [2023-07-12 05:46:55,483] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-12 05:46:55,809] {processor.py:651} INFO - DAG(s) dict_keys(['dag_con_conexion_postgres']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-12 05:46:55,880] {logging_mixin.py:115} INFO - [2023-07-12 05:46:55,880] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-12 05:46:55,923] {logging_mixin.py:115} INFO - [2023-07-12 05:46:55,922] {dag.py:2972} INFO - Setting next_dagrun for dag_con_conexion_postgres to 2023-07-12T00:00:00+00:00, run_after=2023-07-13T00:00:00+00:00
+[2023-07-12 05:46:55,942] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.470 seconds
+[2023-07-12 05:47:06,025] {processor.py:153} INFO - Started process (PID=896) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-12 05:47:06,029] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-12 05:47:06,032] {logging_mixin.py:115} INFO - [2023-07-12 05:47:06,032] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-12 05:47:06,575] {processor.py:651} INFO - DAG(s) dict_keys(['dag_con_conexion_postgres']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-12 05:47:06,627] {logging_mixin.py:115} INFO - [2023-07-12 05:47:06,627] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-12 05:47:06,671] {logging_mixin.py:115} INFO - [2023-07-12 05:47:06,671] {dag.py:2972} INFO - Setting next_dagrun for dag_con_conexion_postgres to 2023-07-12T00:00:00+00:00, run_after=2023-07-13T00:00:00+00:00
+[2023-07-12 05:47:06,723] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.704 seconds
