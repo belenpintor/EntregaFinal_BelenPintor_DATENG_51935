@@ -1,5 +1,5 @@
-yfinance
 pg8000
-dotenv
-os
 requests
+apache-airflow-providers-apache-spark
+apache-airflow[amazon]
+apache-airflow-providers-amazon

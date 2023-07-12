@@ -1,12 +1,11 @@
-import yfinance as yf
-import pg8000
-from dotenv import load_dotenv
 import os
 import requests
+import psycopg2
+
 
 def create_connection():
     # Cargo variables del archivo .env
-    load_dotenv()
+
 
     db_user = os.getenv("DB_USER")
     db_password = os.getenv("DB_PASSWORD")
@@ -15,7 +14,7 @@ def create_connection():
     db_database = os.getenv("DB_DATABASE")
 
     # Crear conexión a la base de datos
-    connection = pg8000.connect(
+    connection = psycopg2.connect(
         user=db_user,
         password=db_password,
         host=db_host,
