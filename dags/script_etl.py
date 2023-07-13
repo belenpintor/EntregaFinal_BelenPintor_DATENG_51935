@@ -101,10 +101,9 @@ def get_data():
     else:
         print("Error al realizar la solicitud. Código de estado:", response.status_code)
 
-def load_data():
+def load_data(**context):
     connection = create_connection()
-    data = get_data()
-    transformed_data = transform_data(data)
+    transformed_data = context['task_instance'].xcom_pull(task_ids='transformar_datos')
 
     insert_query = """
         INSERT INTO bapintor_coderhouse.ciudades (
@@ -131,6 +130,7 @@ def load_data():
         )
     """
     cursor = connection.cursor()
+    print("data transformada",transformed_data)
     for item in transformed_data:
         nombre = item["ciudad"]
         puntajes = item["puntajes"]
@@ -141,6 +141,7 @@ def load_data():
 
         try:
             connection.commit()
+            print("listo comit")
         except Exception as e:
             connection.rollback()
             print("Error:", str(e))

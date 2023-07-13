@@ -26,12 +26,15 @@ with DAG(
     task2 = PythonOperator(
         task_id='transformar_datos',
         python_callable=transform_data,
-        op_kwargs={'data': get_data()}
+        op_kwargs={'data': get_data()},
+        provide_context=True  # Habilita el contexto de Airflow para acceder a XComs
     )
+    
 
     task3 = PythonOperator(
         task_id='cargar_datos',
-        python_callable=load_data
+        python_callable=load_data,
+        provide_context=True 
     )
 
     task1 >> task2 >> task3

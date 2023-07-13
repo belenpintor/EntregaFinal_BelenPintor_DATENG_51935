@@ -20,3 +20,7 @@ AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-11T00:00:00+00:00
 [2023-07-13 17:03:17,615] {logging_mixin.py:115} INFO - creando conexion
 [2023-07-13 17:03:25,622] {script_etl.py:20} INFO - DB_USER probando usuario 2: bapintor_coderhouse
 [2023-07-13 17:03:25,626] {logging_mixin.py:115} INFO - usuario probando 2 bapintor_coderhouse
+[2023-07-13 17:17:39,451] {python.py:173} INFO - Done. Returned value was: None
+[2023-07-13 17:17:39,900] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dag_con_conexion_postgres, task_id=cargar_datos, execution_date=20230711T000000, start_date=20230713T170314, end_date=20230713T171739
+[2023-07-13 17:17:40,437] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-07-13 17:17:40,684] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
