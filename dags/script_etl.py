@@ -9,16 +9,16 @@ from os import environ as env
 
 
 def create_connection():
-    # Cargo variables del archivo .env
+    # Cargo variables especificadas en airflow
 
     print("creando conexion")
-    db_user = os.getenv("DB_USER")
-    db_password = os.getenv("DB_PASSWORD")
-    db_host = os.getenv("DB_HOST")
-    db_port = os.getenv("DB_PORT")
-    db_database = os.getenv("DB_DATABASE")
-    logging.info(f"DB_USER probando usuario 1: {db_user}")
-    print("usuario probando 1",db_user)
+    db_user = Variable.get("DB_USER")
+    db_password = Variable.get("DB_PASSWORD")
+    db_host = Variable.get("DB_HOST")
+    db_port = Variable.get("DB_PORT")
+    db_database = Variable.get("DB_DATABASE")
+    logging.info(f"DB_USER probando usuario 2: {db_user}")
+    print("usuario probando 2",db_user)
 
     # Crear conexión a la base de datos
     connection = psycopg2.connect(
@@ -28,6 +28,10 @@ def create_connection():
         port=db_port,
         database=db_database
     )
+    if connection:
+        print("Conexión exitosa a la base de datos")
+    else:
+        print("Error al conectar a la base de datos")
     return connection
 
 def create_table():

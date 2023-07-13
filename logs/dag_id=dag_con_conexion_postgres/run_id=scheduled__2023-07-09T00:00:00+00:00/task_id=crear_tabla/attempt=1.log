@@ -38,3 +38,72 @@ psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.
 ; 418)
 [2023-07-12 05:29:56,437] {local_task_job.py:156} INFO - Task exited with return code 1
 [2023-07-12 05:29:57,814] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-07-13 16:40:20,977] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.crear_tabla scheduled__2023-07-09T00:00:00+00:00 [queued]>
+[2023-07-13 16:40:21,636] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.crear_tabla scheduled__2023-07-09T00:00:00+00:00 [queued]>
+[2023-07-13 16:40:21,668] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-13 16:40:21,711] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2023-07-13 16:40:21,740] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-13 16:40:22,012] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): crear_tabla> on 2023-07-09 00:00:00+00:00
+[2023-07-13 16:40:22,063] {standard_task_runner.py:52} INFO - Started process 290 to run task
+[2023-07-13 16:40:22,230] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_con_conexion_postgres', 'crear_tabla', 'scheduled__2023-07-09T00:00:00+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_paises.py', '--cfg-path', '/tmp/tmpfeo5owl5', '--error-file', '/tmp/tmps2y45vsz']
+[2023-07-13 16:40:22,244] {standard_task_runner.py:80} INFO - Job 21: Subtask crear_tabla
+[2023-07-13 16:40:25,891] {task_command.py:371} INFO - Running <TaskInstance: dag_con_conexion_postgres.crear_tabla scheduled__2023-07-09T00:00:00+00:00 [running]> on host bd4a51b00e09
+[2023-07-13 16:40:40,372] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Belenpintor
+AIRFLOW_CTX_DAG_ID=dag_con_conexion_postgres
+AIRFLOW_CTX_TASK_ID=crear_tabla
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-09T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-09T00:00:00+00:00
+[2023-07-13 16:40:40,456] {logging_mixin.py:115} INFO - creando conexion
+[2023-07-13 16:40:40,461] {script_etl.py:20} INFO - DB_USER probando usuario 1: None
+[2023-07-13 16:40:40,483] {logging_mixin.py:115} INFO - usuario probando 1 None
+[2023-07-13 16:40:40,506] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/script_etl.py", line 34, in create_table
+    connection = create_connection()
+  File "/opt/airflow/dags/script_etl.py", line 29, in create_connection
+    database=db_database
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+
+[2023-07-13 16:40:41,121] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=dag_con_conexion_postgres, task_id=crear_tabla, execution_date=20230709T000000, start_date=20230713T164021, end_date=20230713T164041
+[2023-07-13 16:40:41,845] {standard_task_runner.py:97} ERROR - Failed to execute job 21 for task crear_tabla (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+; 290)
+[2023-07-13 16:40:42,378] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-07-13 16:40:43,422] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-07-13 16:58:55,697] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.crear_tabla scheduled__2023-07-09T00:00:00+00:00 [queued]>
+[2023-07-13 16:58:56,305] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.crear_tabla scheduled__2023-07-09T00:00:00+00:00 [queued]>
+[2023-07-13 16:58:56,315] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-13 16:58:56,323] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2023-07-13 16:58:56,325] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-13 16:58:56,709] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): crear_tabla> on 2023-07-09 00:00:00+00:00
+[2023-07-13 16:58:56,753] {standard_task_runner.py:52} INFO - Started process 810 to run task
+[2023-07-13 16:58:56,820] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_con_conexion_postgres', 'crear_tabla', 'scheduled__2023-07-09T00:00:00+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_paises.py', '--cfg-path', '/tmp/tmpnmd2y3qg', '--error-file', '/tmp/tmpw4zqi5m4']
+[2023-07-13 16:58:56,826] {standard_task_runner.py:80} INFO - Job 25: Subtask crear_tabla
+[2023-07-13 16:58:58,599] {task_command.py:371} INFO - Running <TaskInstance: dag_con_conexion_postgres.crear_tabla scheduled__2023-07-09T00:00:00+00:00 [running]> on host bd4a51b00e09
+[2023-07-13 16:59:27,846] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Belenpintor
+AIRFLOW_CTX_DAG_ID=dag_con_conexion_postgres
+AIRFLOW_CTX_TASK_ID=crear_tabla
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-09T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-09T00:00:00+00:00
+[2023-07-13 16:59:27,856] {logging_mixin.py:115} INFO - creando conexion
+[2023-07-13 16:59:28,556] {script_etl.py:20} INFO - DB_USER probando usuario 2: bapintor_coderhouse
+[2023-07-13 16:59:28,559] {logging_mixin.py:115} INFO - usuario probando 2 bapintor_coderhouse
+[2023-07-13 16:59:30,526] {python.py:173} INFO - Done. Returned value was: None
+[2023-07-13 16:59:30,811] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dag_con_conexion_postgres, task_id=crear_tabla, execution_date=20230709T000000, start_date=20230713T165855, end_date=20230713T165930
+[2023-07-13 16:59:31,243] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-07-13 16:59:31,990] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
