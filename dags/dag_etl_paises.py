@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta
 from airflow import DAG
-from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.operators.python import PythonOperator
-from script_etl import create_table, load_data, transform_data, get_data
+from airflow.models import Variable
+from script_etl import create_table, load_data, transform_data, get_data, create_connection
 
 default_args = {
     'owner': 'Belenpintor',

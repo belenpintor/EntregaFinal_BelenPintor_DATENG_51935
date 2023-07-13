@@ -64,6 +64,7 @@ x-airflow-common:
     - ./scripts:/opt/airflow/scripts
     - ./plugins:/opt/airflow/plugins
     - ./requirements.txt:/requirements.txt
+    - ./dags/.env:/opt/airflow/dags/.env
   user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
   depends_on:
     postgres:
@@ -96,6 +97,8 @@ services:
       interval: 10s
       timeout: 10s
       retries: 5
+    #environment:
+      #- AIRFLOW__CORE__LOGGING_LEVEL=DEBUG
     restart: always
 
   airflow-scheduler:

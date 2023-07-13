@@ -1,17 +1,24 @@
 import os
 import requests
 import psycopg2
+import logging
+from airflow.models import Variable
+from os import environ as env
+
+
 
 
 def create_connection():
     # Cargo variables del archivo .env
 
-
+    print("creando conexion")
     db_user = os.getenv("DB_USER")
     db_password = os.getenv("DB_PASSWORD")
     db_host = os.getenv("DB_HOST")
     db_port = os.getenv("DB_PORT")
     db_database = os.getenv("DB_DATABASE")
+    logging.info(f"DB_USER probando usuario 1: {db_user}")
+    print("usuario probando 1",db_user)
 
     # Crear conexión a la base de datos
     connection = psycopg2.connect(
@@ -81,10 +88,18 @@ def transform_data(data):
 
     return transformed_data
 
+def get_data():
+    url = "https://api.teleport.org/api/urban_areas/"
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+        return data
+    else:
+        print("Error al realizar la solicitud. Código de estado:", response.status_code)
+
 def load_data():
     connection = create_connection()
     data = get_data()
-
     transformed_data = transform_data(data)
 
     insert_query = """
@@ -111,7 +126,6 @@ def load_data():
             %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
         )
     """
-
     cursor = connection.cursor()
     for item in transformed_data:
         nombre = item["ciudad"]
@@ -129,12 +143,5 @@ def load_data():
 
     connection.close()
 
-def get_data():
-    url = "https://api.teleport.org/api/urban_areas/"
-    response = requests.get(url)
-    if response.status_code == 200:
-        data = response.json()
-        return data
-    else:
-        print("Error al realizar la solicitud. Código de estado:", response.status_code)
+
 
