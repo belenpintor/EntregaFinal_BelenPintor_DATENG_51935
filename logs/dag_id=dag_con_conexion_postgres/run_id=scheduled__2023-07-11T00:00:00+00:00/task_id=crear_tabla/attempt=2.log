@@ -1,0 +1,27 @@
+[2023-07-16 18:32:45,069] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.crear_tabla scheduled__2023-07-11T00:00:00+00:00 [queued]>
+[2023-07-16 18:32:45,156] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.crear_tabla scheduled__2023-07-11T00:00:00+00:00 [queued]>
+[2023-07-16 18:32:45,157] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-16 18:32:45,160] {taskinstance.py:1377} INFO - Starting attempt 2 of 1
+[2023-07-16 18:32:45,164] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-16 18:32:45,235] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): crear_tabla> on 2023-07-11 00:00:00+00:00
+[2023-07-16 18:32:45,252] {standard_task_runner.py:52} INFO - Started process 173 to run task
+[2023-07-16 18:32:45,276] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_con_conexion_postgres', 'crear_tabla', 'scheduled__2023-07-11T00:00:00+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_paises.py', '--cfg-path', '/tmp/tmplfesl1k3', '--error-file', '/tmp/tmptguubdg_']
+[2023-07-16 18:32:45,280] {standard_task_runner.py:80} INFO - Job 60: Subtask crear_tabla
+[2023-07-16 18:32:45,525] {task_command.py:371} INFO - Running <TaskInstance: dag_con_conexion_postgres.crear_tabla scheduled__2023-07-11T00:00:00+00:00 [running]> on host bd4a51b00e09
+[2023-07-16 18:32:45,852] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Belenpintor
+AIRFLOW_CTX_DAG_ID=dag_con_conexion_postgres
+AIRFLOW_CTX_TASK_ID=crear_tabla
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-11T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-11T00:00:00+00:00
+[2023-07-16 18:32:45,857] {logging_mixin.py:115} INFO - creando conexion
+[2023-07-16 18:32:46,142] {script_etl.py:20} INFO - DB_USER probando usuario 2: bapintor_coderhouse
+[2023-07-16 18:32:46,147] {logging_mixin.py:115} INFO - usuario probando 2 bapintor_coderhouse
+[2023-07-16 18:32:47,332] {logging_mixin.py:115} INFO - Conexión exitosa a la base de datos
+[2023-07-16 18:32:47,789] {python.py:173} INFO - Done. Returned value was: None
+[2023-07-16 18:32:47,900] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dag_con_conexion_postgres, task_id=crear_tabla, execution_date=20230711T000000, start_date=20230716T183245, end_date=20230716T183247
+[2023-07-16 18:32:48,029] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-07-16 18:32:48,209] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
