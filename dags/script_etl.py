@@ -34,42 +34,6 @@ def create_connection():
         print("Error al conectar a la base de datos")
     return connection
 
-def create_table():
-    connection = create_connection()
- 
-    schema = "bapintor_coderhouse"
-    table_name = "ciudades"
-    #Creación de tabla (ya la cree en mi esquema)
-    #city es la primary key porque en esta data no existen dos registros para la misma ciudad. 
-    create_table_query = f"""
-    CREATE TABLE IF NOT EXISTS {schema}.{table_name} (
-        city VARCHAR PRIMARY KEY,
-        "Housing" DECIMAL(10, 2),
-        "Cost of Living" DECIMAL(10, 2),
-        "Startups" DECIMAL(10, 2),
-        "Venture Capital" DECIMAL(10, 2),
-        "Travel Connectivity" DECIMAL(10, 2),
-        "Commute" DECIMAL(10, 2),
-        "Business Freedom" DECIMAL(10, 2),
-        "Safety" DECIMAL(10, 2),
-        "Healthcare" DECIMAL(10, 2),
-        "Education" DECIMAL(10, 2),
-        "Environmental Quality" DECIMAL(10, 2),
-        "Economy" DECIMAL(10, 2),
-        "Taxation" DECIMAL(10, 2),
-        "Internet Access" DECIMAL(10, 2),
-        "Leisure & Culture" DECIMAL(10, 2),
-        "Tolerance" DECIMAL(10, 2),
-        "Outdoors" DECIMAL(10, 2)
-    )
-    -- Aplicar la clave de ordenación a la nueva tabla
-    SORTKEY (city);
-    """
-    cursor=connection.cursor()
-    # Ejecuta la consulta CREATE TABLE
-    cursor.execute(create_table_query)
-    # Confirma los cambios en la base de datos
-    connection.commit()
 
 def transform_data(data):
     transformed_data = []
@@ -125,8 +89,9 @@ def load_data(**context):
             "Leisure & Culture",
             "Tolerance",
             "Outdoors"
+            "process_date" 
         ) VALUES (
-            %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+            %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
         )
     """
     cursor = connection.cursor()

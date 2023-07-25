@@ -315,3 +315,40 @@ airflow.exceptions.AirflowException: Task received SIGTERM signal
 [2023-07-16 18:31:37,756] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=dag_con_conexion_postgres, task_id=crear_tabla, execution_date=20230713T000000, start_date=20230716T182618, end_date=20230716T183137
 [2023-07-16 18:31:39,804] {standard_task_runner.py:97} ERROR - Failed to execute job 56 for task crear_tabla (Task received SIGTERM signal; 55439)
 [2023-07-16 18:31:40,789] {process_utils.py:75} INFO - Process psutil.Process(pid=55439, status='terminated', exitcode=1, started='18:26:19') (55439) terminated with exit code 1
+[2023-07-25 21:44:46,381] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.crear_tabla scheduled__2023-07-13T00:00:00+00:00 [queued]>
+[2023-07-25 21:44:46,611] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.crear_tabla scheduled__2023-07-13T00:00:00+00:00 [queued]>
+[2023-07-25 21:44:46,618] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-25 21:44:46,623] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2023-07-25 21:44:46,631] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-25 21:44:47,340] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): crear_tabla> on 2023-07-13 00:00:00+00:00
+[2023-07-25 21:44:47,440] {standard_task_runner.py:52} INFO - Started process 240 to run task
+[2023-07-25 21:44:47,633] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_con_conexion_postgres', 'crear_tabla', 'scheduled__2023-07-13T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_paises.py', '--cfg-path', '/tmp/tmp6lwuqsak', '--error-file', '/tmp/tmpfclu0l65']
+[2023-07-25 21:44:47,672] {standard_task_runner.py:80} INFO - Job 7: Subtask crear_tabla
+[2023-07-25 21:44:50,332] {task_command.py:371} INFO - Running <TaskInstance: dag_con_conexion_postgres.crear_tabla scheduled__2023-07-13T00:00:00+00:00 [running]> on host fef34475f162
+[2023-07-25 21:44:54,957] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Belenpintor
+AIRFLOW_CTX_DAG_ID=dag_con_conexion_postgres
+AIRFLOW_CTX_TASK_ID=crear_tabla
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-13T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-13T00:00:00+00:00
+[2023-07-25 21:44:54,987] {logging_mixin.py:115} INFO - creando conexion
+[2023-07-25 21:44:55,320] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/script_etl.py", line 38, in create_table
+    connection = create_connection()
+  File "/opt/airflow/dags/script_etl.py", line 15, in create_connection
+    db_user = Variable.get("DB_USER")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable DB_USER does not exist'
+[2023-07-25 21:44:55,839] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=dag_con_conexion_postgres, task_id=crear_tabla, execution_date=20230713T000000, start_date=20230725T214446, end_date=20230725T214455
+[2023-07-25 21:44:56,658] {standard_task_runner.py:97} ERROR - Failed to execute job 7 for task crear_tabla ('Variable DB_USER does not exist'; 240)
+[2023-07-25 21:44:57,193] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-07-25 21:44:58,505] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
