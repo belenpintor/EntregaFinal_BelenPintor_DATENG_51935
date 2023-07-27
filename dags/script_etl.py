@@ -2,107 +2,89 @@ import os
 import requests
 import psycopg2
 import logging
+import pandas as pd
 from airflow.models import Variable
+from airflow.hooks.base_hook import BaseHook
+from datetime import datetime, timedelta
+
 from os import environ as env
 
-
-
-
-def create_connection():
-    # Cargo variables especificadas en airflow
-
-    print("creando conexion")
-    db_user = Variable.get("DB_USER")
-    db_password = Variable.get("DB_PASSWORD")
-    db_host = Variable.get("DB_HOST")
-    db_port = Variable.get("DB_PORT")
-    db_database = Variable.get("DB_DATABASE")
-    logging.info(f"DB_USER probando usuario 2: {db_user}")
-    print("usuario probando 2",db_user)
-
-    # Crear conexión a la base de datos
-    connection = psycopg2.connect(
-        user=db_user,
-        password=db_password,
-        host=db_host,
-        port=db_port,
-        database=db_database
-    )
-    if connection:
-        print("Conexión exitosa a la base de datos")
-    else:
-        print("Error al conectar a la base de datos")
-    return connection
-
-
-def transform_data(data):
-    transformed_data = []
-    for ciudad in data['_links']['ua:item']:
-        ciudad_url = ciudad['href'] + "scores/"
-        ciudad_nombre = ciudad["name"]
-        scores = []
-
-        response = requests.get(ciudad_url)
-        if response.status_code == 200:
-            ciudad_data = response.json()
-            for categoria in ciudad_data['categories']:
-                nombre = categoria["name"]
-                score = categoria['score_out_of_10']
-                scores.append({"nombre": nombre, "score": score})
-
-            transformed_data.append({"ciudad": ciudad_nombre, "puntajes": scores})
-        else:
-            print("Error al realizar la solicitud. Código de estado:", response.status_code)
-
-    return transformed_data
+insert_query_with_columns = """
+        INSERT INTO bapintor_coderhouse.ciudades (
+            city,
+            "Business Freedom",
+            "Commute",
+            "Cost of Living",
+            "Economy",
+            "Education",
+            "Environmental Quality",
+            "Healthcare",
+            "Housing",
+            "Internet Access",
+            "Leisure & Culture",
+            "Outdoors",
+            "Safety",
+            "Startups",
+            "Taxation",
+            "Tolerance",
+            "Travel Connectivity",
+            "Venture Capital",
+            "process_date"
+        ) VALUES (
+            %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+        )
+    """
 
 def get_data():
     url = "https://api.teleport.org/api/urban_areas/"
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        return data
+        ciudades = []
+        for ciudad in data['_links']['ua:item']:
+            ciudad_url = ciudad['href'] + "scores/"
+            ciudad_nombre = ciudad["name"]
+
+            response = requests.get(ciudad_url)
+            if response.status_code == 200:
+                ciudad_data = response.json()
+                ciudades.append({ciudad_nombre:ciudad_data})
+               
+            else:
+                print("Error al realizar la solicitud. Código de estado:", response.status_code)
+
+        return ciudades
     else:
         print("Error al realizar la solicitud. Código de estado:", response.status_code)
 
-def load_data(**context):
-    connection = create_connection()
-    transformed_data = context['task_instance'].xcom_pull(task_ids='transformar_datos')
+def transform_data(ciudades_data):
+    scores = []
+    for dupla in ciudades_data:
+        for ciudad_nombre, ciudad in dupla.items():
+            for categoria in ciudad['categories']:
+                nombre = categoria["name"]
+                score = categoria['score_out_of_10']
+                scores.append({"ciudad_nombre": ciudad_nombre, "nombre": nombre, "score": score})
 
-    insert_query = """
-        INSERT INTO bapintor_coderhouse.ciudades (
-            city,
-            "Housing",
-            "Cost of Living",
-            "Startups",
-            "Venture Capital",
-            "Travel Connectivity",
-            "Commute",
-            "Business Freedom",
-            "Safety",
-            "Healthcare",
-            "Education",
-            "Environmental Quality",
-            "Economy",
-            "Taxation",
-            "Internet Access",
-            "Leisure & Culture",
-            "Tolerance",
-            "Outdoors"
-            "process_date" 
-        ) VALUES (
-            %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
-        )
-    """
+    # Crear el DataFrame a partir de la lista scores
+    df = pd.DataFrame(scores)
+    df_pivot = df.pivot_table(index='ciudad_nombre', columns='nombre', values='score', fill_value=None)
+
+    print("asi el dataframe", df_pivot)
+
+    connection = psycopg2.connect(
+        user=Variable.get("DB_USER"),
+        password=Variable.get("DB_PASSWORD"),
+        host=Variable.get("DB_HOST"),
+        port=Variable.get("DB_PORT"),
+        database=Variable.get("DB_DATABASE")
+    )
     cursor = connection.cursor()
-    print("data transformada",transformed_data)
-    for item in transformed_data:
-        nombre = item["ciudad"]
-        puntajes = item["puntajes"]
 
-        p_values = [puntaje["score"] for puntaje in puntajes]
-
-        cursor.execute(insert_query, (nombre, *p_values))
+    for index, row in df_pivot.iterrows():
+        values = list(row.values)
+        process_date = datetime.utcnow()  # Obtiene la fecha y hora actual para cada fila
+        cursor.execute(insert_query_with_columns, [index] + values + [process_date])
 
         try:
             connection.commit()
@@ -112,6 +94,3 @@ def load_data(**context):
             print("Error:", str(e))
 
     connection.close()
-
-
-

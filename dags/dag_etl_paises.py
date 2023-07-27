@@ -2,8 +2,9 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.operators.postgres import PostgresOperator
+from airflow.hooks.base_hook import BaseHook
 from airflow.models import Variable
-from script_etl import create_table, load_data, transform_data, get_data, create_connection
+from script_etl import  transform_data, get_data
 
 QUERY_CREATE_TABLE = """
 CREATE TABLE IF NOT EXISTS bapintor_coderhouse.ciudades (
@@ -25,7 +26,7 @@ CREATE TABLE IF NOT EXISTS bapintor_coderhouse.ciudades (
     "Leisure & Culture" DECIMAL(10, 2),
     "Tolerance" DECIMAL(10, 2),
     "Outdoors" DECIMAL(10, 2),
-    "process_date" TIMESTAMP DISTKEY
+    "process_date" DATETIME DISTKEY
 );
 """
 
@@ -53,17 +54,18 @@ with DAG(
     )
 
     task2 = PythonOperator(
-        task_id='transformar_datos',
-        python_callable=transform_data,
-        op_kwargs={'data': get_data()},
-        provide_context=True  # Habilita el contexto de Airflow para acceder a XComs
+        task_id='obtener_datos',
+        python_callable=get_data,
+        provide_context=True
     )
-    
 
     task3 = PythonOperator(
-        task_id='cargar_datos',
-        python_callable=load_data,
-        provide_context=True 
+        task_id='transformar_datos',
+        python_callable=transform_data,
+        provide_context=True,
+        op_args=[task2.output] 
+        
     )
 
-    task1 >> task2 >> task3
+
+    task1 >> task2 >> task3 

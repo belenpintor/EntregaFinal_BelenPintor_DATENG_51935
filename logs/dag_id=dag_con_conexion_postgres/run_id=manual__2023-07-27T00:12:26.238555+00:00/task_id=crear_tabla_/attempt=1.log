@@ -1,0 +1,47 @@
+[2023-07-27 00:12:34,823] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.crear_tabla_ manual__2023-07-27T00:12:26.238555+00:00 [queued]>
+[2023-07-27 00:12:34,873] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.crear_tabla_ manual__2023-07-27T00:12:26.238555+00:00 [queued]>
+[2023-07-27 00:12:34,875] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-27 00:12:34,883] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2023-07-27 00:12:34,888] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-27 00:12:35,015] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): crear_tabla_> on 2023-07-27 00:12:26.238555+00:00
+[2023-07-27 00:12:35,049] {standard_task_runner.py:52} INFO - Started process 5482 to run task
+[2023-07-27 00:12:35,087] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_con_conexion_postgres', 'crear_tabla_', 'manual__2023-07-27T00:12:26.238555+00:00', '--job-id', '146', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_paises.py', '--cfg-path', '/tmp/tmp_cgfg5_r', '--error-file', '/tmp/tmp2t0j9qa3']
+[2023-07-27 00:12:35,092] {standard_task_runner.py:80} INFO - Job 146: Subtask crear_tabla_
+[2023-07-27 00:12:35,770] {task_command.py:371} INFO - Running <TaskInstance: dag_con_conexion_postgres.crear_tabla_ manual__2023-07-27T00:12:26.238555+00:00 [running]> on host 484a5a9deba0
+[2023-07-27 00:12:36,046] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Belenpintor
+AIRFLOW_CTX_DAG_ID=dag_con_conexion_postgres
+AIRFLOW_CTX_TASK_ID=crear_tabla_
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-27T00:12:26.238555+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-27T00:12:26.238555+00:00
+[2023-07-27 00:12:36,091] {base.py:68} INFO - Using connection ID 'redshift_belen' for task execution.
+[2023-07-27 00:12:37,182] {dbapi.py:231} INFO - Running statement: 
+CREATE TABLE IF NOT EXISTS public.ciudades (
+    city VARCHAR PRIMARY KEY,
+    "Housing" DECIMAL(10, 2),
+    "Cost of Living" DECIMAL(10, 2),
+    "Startups" DECIMAL(10, 2),
+    "Venture Capital" DECIMAL(10, 2),
+    "Travel Connectivity" DECIMAL(10, 2),
+    "Commute" DECIMAL(10, 2),
+    "Business Freedom" DECIMAL(10, 2),
+    "Safety" DECIMAL(10, 2),
+    "Healthcare" DECIMAL(10, 2),
+    "Education" DECIMAL(10, 2),
+    "Environmental Quality" DECIMAL(10, 2),
+    "Economy" DECIMAL(10, 2),
+    "Taxation" DECIMAL(10, 2),
+    "Internet Access" DECIMAL(10, 2),
+    "Leisure & Culture" DECIMAL(10, 2),
+    "Tolerance" DECIMAL(10, 2),
+    "Outdoors" DECIMAL(10, 2),
+    "process_date" TIMESTAMP DISTKEY
+);, parameters: None
+[2023-07-27 00:12:37,414] {postgres.py:94} INFO - INFO:  Relation "ciudades" already exists and will be skipped
+
+[2023-07-27 00:12:37,488] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dag_con_conexion_postgres, task_id=crear_tabla_, execution_date=20230727T001226, start_date=20230727T001234, end_date=20230727T001237
+[2023-07-27 00:12:37,636] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-07-27 00:12:37,749] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

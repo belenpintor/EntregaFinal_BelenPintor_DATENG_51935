@@ -1,0 +1,47 @@
+[2023-07-27 00:28:10,134] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.transformar_datos manual__2023-07-27T00:26:25.750699+00:00 [queued]>
+[2023-07-27 00:28:10,154] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.transformar_datos manual__2023-07-27T00:26:25.750699+00:00 [queued]>
+[2023-07-27 00:28:10,156] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-27 00:28:10,158] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2023-07-27 00:28:10,160] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-27 00:28:10,186] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): transformar_datos> on 2023-07-27 00:26:25.750699+00:00
+[2023-07-27 00:28:10,197] {standard_task_runner.py:52} INFO - Started process 5992 to run task
+[2023-07-27 00:28:10,207] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_con_conexion_postgres', 'transformar_datos', 'manual__2023-07-27T00:26:25.750699+00:00', '--job-id', '154', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_paises.py', '--cfg-path', '/tmp/tmpsxae7797', '--error-file', '/tmp/tmptp2o0_8v']
+[2023-07-27 00:28:10,211] {standard_task_runner.py:80} INFO - Job 154: Subtask transformar_datos
+[2023-07-27 00:28:10,330] {task_command.py:371} INFO - Running <TaskInstance: dag_con_conexion_postgres.transformar_datos manual__2023-07-27T00:26:25.750699+00:00 [running]> on host 484a5a9deba0
+[2023-07-27 00:28:10,583] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Belenpintor
+AIRFLOW_CTX_DAG_ID=dag_con_conexion_postgres
+AIRFLOW_CTX_TASK_ID=transformar_datos
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-27T00:26:25.750699+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-27T00:26:25.750699+00:00
+[2023-07-27 00:28:10,837] {logging_mixin.py:115} INFO - asi el dataframe nombre         Business Freedom  ...               process_date
+ciudad_nombre                    ...                           
+Aarhus                 9.940000  ... 2023-07-27 00:28:10.626751
+Adelaide               9.399667  ... 2023-07-27 00:28:10.626751
+Albuquerque            8.671000  ... 2023-07-27 00:28:10.626751
+Almaty                 5.568000  ... 2023-07-27 00:28:10.626751
+Amsterdam              8.836667  ... 2023-07-27 00:28:10.626751
+...                         ...  ...                        ...
+Winnipeg               8.966000  ... 2023-07-27 00:28:10.626751
+Wroclaw                5.704333  ... 2023-07-27 00:28:10.626751
+Yerevan                6.501000  ... 2023-07-27 00:28:10.626751
+Zagreb                 5.720333  ... 2023-07-27 00:28:10.626751
+Zurich                 8.888000  ... 2023-07-27 00:28:10.626751
+
+[266 rows x 18 columns]
+[2023-07-27 00:28:12,036] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/script_etl.py", line 91, in transform_data
+    cursor.execute(insert_query_with_columns, [index] + values + [process_date_iso])
+TypeError: not all arguments converted during string formatting
+[2023-07-27 00:28:12,061] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=dag_con_conexion_postgres, task_id=transformar_datos, execution_date=20230727T002625, start_date=20230727T002810, end_date=20230727T002812
+[2023-07-27 00:28:12,093] {standard_task_runner.py:97} ERROR - Failed to execute job 154 for task transformar_datos (not all arguments converted during string formatting; 5992)
+[2023-07-27 00:28:12,137] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-07-27 00:28:12,199] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

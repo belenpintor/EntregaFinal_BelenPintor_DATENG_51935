@@ -6,6 +6,7 @@ USER root
 RUN python -m pip install --upgrade pip
 RUN python -m pip install apache-airflow-providers-apache-spark
 RUN python -m pip install pg8000
+RUN python -m pip install pandas
 
 USER airflow
 

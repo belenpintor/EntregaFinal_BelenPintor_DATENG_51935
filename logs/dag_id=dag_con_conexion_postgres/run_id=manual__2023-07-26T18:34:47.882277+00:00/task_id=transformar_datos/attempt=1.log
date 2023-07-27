@@ -1,0 +1,32 @@
+[2023-07-26 18:35:09,388] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.transformar_datos manual__2023-07-26T18:34:47.882277+00:00 [queued]>
+[2023-07-26 18:35:09,467] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_postgres.transformar_datos manual__2023-07-26T18:34:47.882277+00:00 [queued]>
+[2023-07-26 18:35:09,469] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-26 18:35:09,472] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2023-07-26 18:35:09,476] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-26 18:35:09,524] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): transformar_datos> on 2023-07-26 18:34:47.882277+00:00
+[2023-07-26 18:35:09,537] {standard_task_runner.py:52} INFO - Started process 1165 to run task
+[2023-07-26 18:35:09,555] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_con_conexion_postgres', 'transformar_datos', 'manual__2023-07-26T18:34:47.882277+00:00', '--job-id', '100', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_paises.py', '--cfg-path', '/tmp/tmpunzrplf5', '--error-file', '/tmp/tmpr_ao9r5t']
+[2023-07-26 18:35:09,566] {standard_task_runner.py:80} INFO - Job 100: Subtask transformar_datos
+[2023-07-26 18:35:09,833] {task_command.py:371} INFO - Running <TaskInstance: dag_con_conexion_postgres.transformar_datos manual__2023-07-26T18:34:47.882277+00:00 [running]> on host 484a5a9deba0
+[2023-07-26 18:35:09,994] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Belenpintor
+AIRFLOW_CTX_DAG_ID=dag_con_conexion_postgres
+AIRFLOW_CTX_TASK_ID=transformar_datos
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-26T18:34:47.882277+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-26T18:34:47.882277+00:00
+[2023-07-26 18:36:39,275] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/script_etl.py", line 81, in transform_data
+    cursor.execute(insert_query, values)
+IndexError: list index out of range
+[2023-07-26 18:36:39,297] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=dag_con_conexion_postgres, task_id=transformar_datos, execution_date=20230726T183447, start_date=20230726T183509, end_date=20230726T183639
+[2023-07-26 18:36:39,323] {standard_task_runner.py:97} ERROR - Failed to execute job 100 for task transformar_datos (list index out of range; 1165)
+[2023-07-26 18:36:39,372] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-07-26 18:36:39,424] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
