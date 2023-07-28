@@ -5,7 +5,9 @@ import logging
 import pandas as pd
 from airflow.models import Variable
 from airflow.hooks.base_hook import BaseHook
+from email import message
 from datetime import datetime, timedelta
+import smtplib
 
 from os import environ as env
 
@@ -34,6 +36,8 @@ insert_query_with_columns = """
             %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
         )
     """
+
+
 
 def get_data():
     url = "https://api.teleport.org/api/urban_areas/"
@@ -94,3 +98,34 @@ def transform_data(ciudades_data):
             print("Error:", str(e))
 
     connection.close()
+    
+    
+def enviar_fallo():
+    try:
+        x=smtplib.SMTP(Variable.get("SMTP_HOST"),Variable.get("SMTP_PORT"))
+        x.starttls()#
+        x.login(Variable.get('SMTP_EMAIL_FROM'), Variable.get('SMTP_PASSWORD'))
+        subject='FALLO DAG'
+        body_text="Mensaje de alerta sobre fallo"
+        message='Subject: {}\n\n{}'.format(subject,body_text)
+        x.sendmail(Variable.get('SMTP_EMAIL_FROM'), Variable.get('SMTP_EMAIL_TO'),message)
+        print('Exito')
+    except Exception as exception:
+        print(exception)
+        print('Failure')
+        raise exception
+
+def enviar_success():
+    try:
+        x=smtplib.SMTP(Variable.get("SMTP_HOST"),Variable.get("SMTP_PORT"))
+        x.starttls()#
+        x.login(Variable.get('SMTP_EMAIL_FROM'), Variable.get('SMTP_PASSWORD'))
+        subject='SUCCES DAG'
+        body_text="Mensaje sobre exito"
+        message='Subject: {}\n\n{}'.format(subject,body_text)
+        x.sendmail(Variable.get('SMTP_EMAIL_FROM'), Variable.get('SMTP_EMAIL_TO'),message)
+        print('Exito')
+    except Exception as exception:
+        print(exception)
+        print('Failure')
+        raise exception
