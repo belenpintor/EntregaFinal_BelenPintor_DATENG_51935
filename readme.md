@@ -2,6 +2,9 @@
 
 En los log de los task del DAG se encuentran ciertos "prints" para confirmar que esté funcionando adecuadamente. A continuación se detallan los archivos presentes en la carpeta y las indicaciones para ejecutar el código. 
 
+### Consideraciones:
+La API desde la cual se extran los datos tiene una estructura de cada ciudad, y un link asociado para un json asociado a cada ciudad. Es desde este último donde se obtiene los datos que se ocuparán en el dataframe. Es por esto que el proceso de extracción de datos tiene operaciones que recorren el primer json y luego debe realizar otro request para entrar a la data particular de cada ciudad. Y por ende opera fuera del dataframe para primero obtener toda la info necesaria. 
+
 # Archivos
 Los archivos de la carpeta son:
 * `docker-compose.yml`: Archivo de configuración de Docker Compose. 

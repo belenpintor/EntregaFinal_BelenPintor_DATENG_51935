@@ -12,30 +12,49 @@ import smtplib
 from os import environ as env
 
 insert_query_with_columns = """
-        INSERT INTO bapintor_coderhouse.ciudades (
-            city,
-            "Business Freedom",
-            "Commute",
-            "Cost of Living",
-            "Economy",
-            "Education",
-            "Environmental Quality",
-            "Healthcare",
-            "Housing",
-            "Internet Access",
-            "Leisure & Culture",
-            "Outdoors",
-            "Safety",
-            "Startups",
-            "Taxation",
-            "Tolerance",
-            "Travel Connectivity",
-            "Venture Capital",
-            "process_date"
-        ) VALUES (
-            %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
-        )
-    """
+    INSERT INTO bapintor_coderhouse.ciudades (
+        city,
+        "Business Freedom",
+        "Commute",
+        "Cost of Living",
+        "Economy",
+        "Education",
+        "Environmental Quality",
+        "Healthcare",
+        "Housing",
+        "Internet Access",
+        "Leisure & Culture",
+        "Outdoors",
+        "Safety",
+        "Startups",
+        "Taxation",
+        "Tolerance",
+        "Travel Connectivity",
+        "Venture Capital",
+        "process_date"
+    ) VALUES (
+        %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+    )
+    ON CONFLICT (city) DO UPDATE
+    SET "Business Freedom" = EXCLUDED."Business Freedom",
+        "Commute" = EXCLUDED."Commute",
+        "Cost of Living" = EXCLUDED."Cost of Living",
+        "Economy" = EXCLUDED."Economy",
+        "Education" = EXCLUDED."Education",
+        "Environmental Quality" = EXCLUDED."Environmental Quality",
+        "Healthcare" = EXCLUDED."Healthcare",
+        "Housing" = EXCLUDED."Housing",
+        "Internet Access" = EXCLUDED."Internet Access",
+        "Leisure & Culture" = EXCLUDED."Leisure & Culture",
+        "Outdoors" = EXCLUDED."Outdoors",
+        "Safety" = EXCLUDED."Safety",
+        "Startups" = EXCLUDED."Startups",
+        "Taxation" = EXCLUDED."Taxation",
+        "Tolerance" = EXCLUDED."Tolerance",
+        "Travel Connectivity" = EXCLUDED."Travel Connectivity",
+        "Venture Capital" = EXCLUDED."Venture Capital",
+        "process_date" = COALESCE(EXCLUDED.process_date, bapintor_coderhouse.ciudades.process_date)
+"""
 
 
 

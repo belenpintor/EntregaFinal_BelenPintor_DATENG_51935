@@ -52205,3 +52205,53 @@ File Path                            PID    Runtime      # DAGs    # Errors  Las
 /opt/airflow/dags/script_etl.py                               0           0  0.92s           2023-07-28T01:55:17
 /opt/airflow/dags/dag_etl_paises.py                           1           0  1.16s           2023-07-28T01:55:21
 ================================================================================
+[2023-07-28 20:38:09,629] {manager.py:480} INFO - Processing files using up to 2 processes at a time 
+[2023-07-28 20:38:09,639] {manager.py:481} INFO - Process each file at most once every 10 seconds
+[2023-07-28 20:38:09,643] {manager.py:483} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-07-28 20:38:09,650] {manager.py:690} INFO - Searching for files in /opt/airflow/dags
+[2023-07-28 20:38:09,781] {manager.py:693} INFO - There are 2 files in /opt/airflow/dags
+[2023-07-28 20:38:10,676] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_etl_paises.py    168  0.33s             0           0
+/opt/airflow/dags/script_etl.py        165  0.38s             0           0
+================================================================================
+[2023-07-28 20:38:40,830] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/script_etl.py        178  2.13s             0           0  17.61s          2023-07-28T20:38:27
+/opt/airflow/dags/dag_etl_paises.py    181  2.07s             1           0  18.50s          2023-07-28T20:38:28
+================================================================================
+[2023-07-28 20:39:11,713] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/script_etl.py                               0           0  8.44s           2023-07-28T20:39:05
+/opt/airflow/dags/dag_etl_paises.py                           1           0  8.97s           2023-07-28T20:39:06
+================================================================================
+[2023-07-28 20:39:42,238] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/script_etl.py                               0           0  2.08s           2023-07-28T20:39:42
+/opt/airflow/dags/dag_etl_paises.py                           1           0  4.27s           2023-07-28T20:39:33
+================================================================================
+[2023-07-28 20:40:12,741] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/script_etl.py                               0           0  1.84s           2023-07-28T20:40:05
+/opt/airflow/dags/dag_etl_paises.py                           1           0  1.77s           2023-07-28T20:40:08
+================================================================================
