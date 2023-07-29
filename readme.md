@@ -49,4 +49,13 @@ Definirlas credenciales necesarias SMTP, en este caso estan definidas así:
 La tarea cuenta con 5 DAGS. 
 * Los primeros 3 son procesos ETL de creación de tabla extracción de datos, transformación y carga. 
 * Luego se verifican los thresholds definidos en un diccionario (los cuales son modificables en este e incluso se pueden agregar más) y se envía un correo de notificación 
-* Y por último también se dejo habilitado un task que envía un correo de succes cuando termina el procedimiento. 
+* Y por último también se dejo habilitado un task que envía un correo de succes cuando termina el procedimiento.
+
+
+Imagenes de correos:
+![image](https://github.com/belenpintor/EntregaFinal_BelenPintor_DATENG_51935/assets/69732485/ef4af468-9815-4b76-b9ca-3ffb9840bf33)
+![image](https://github.com/belenpintor/EntregaFinal_BelenPintor_DATENG_51935/assets/69732485/48fe36a3-63f2-45e2-a2bb-feb6ee49279e)
+
+
+
+
