@@ -36,7 +36,16 @@ insert_query_with_columns = """
         VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
     
 """
-
+config_thresholds= {
+    "Tokyo": {
+        "Environmental Quality": {"min": 2, "max": 8},
+        "Safety": {"min": 1, "max": 8}
+    },
+    "Belgium": {
+        "Environmental Quality": {"min": 3, "max": 7},
+        "Safety": {"min": 2, "max": 8}
+    }
+}
 
 
 def get_data():

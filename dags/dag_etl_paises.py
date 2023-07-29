@@ -7,8 +7,7 @@ from email import message
 from airflow.hooks.base_hook import BaseHook
 from airflow.models import Variable
 import smtplib
-import json
-from script_etl import  transform_data, get_data, enviar_success, enviar_alerta
+from script_etl import  transform_data, get_data, enviar_success, enviar_alerta, config_thresholds
 
 
 QUERY_CREATE_TABLE = """
@@ -40,11 +39,7 @@ def verificar_threshold(**context):
     connection = postgres_hook.get_conn()
     cursor = connection.cursor()
 
-    # Leer la configuración de los umbrales desde el archivo JSON
-    with open("config_threshold.json", 'r') as json_config:
-        config = json.load(json_config)
-
-    for city, categories in config['thresholds'].items():
+    for city, categories in config_thresholds.items():
         # Construir la consulta dinámicamente usando las columnas de la tabla
         columns_query_str = ', '.join(f'"{category}"' for category in categories)
         query = f"""
@@ -74,11 +69,6 @@ def verificar_threshold(**context):
 
     connection.close()
 
-SMTP_HOST = Variable.get("SMTP_HOST")
-SMTP_PORT = Variable.get("SMTP_PORT")
-SMTP_EMAIL_FROM= Variable.get("SMTP_EMAIL_FROM")
-SMTP_PASSWORD= Variable.get("SMTP_PASSWORD")
-SMTP_EMAIL_TO= Variable.get("SMTP_EMAIL_TO")
 
 default_args = {
     'owner': 'Belenpintor',
