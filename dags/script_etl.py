@@ -1,16 +1,14 @@
-import os
 import requests
 import psycopg2
-import logging
 import pandas as pd
 from airflow.models import Variable
 from airflow.hooks.base_hook import BaseHook
+from airflow.providers.postgres.operators.postgres import PostgresOperator, PostgresHook
 from email import message
 from datetime import datetime, timedelta
 import smtplib
-import json
 
-from os import environ as env
+
 
 insert_query_with_columns = """
     INSERT INTO bapintor_coderhouse.ciudades (
@@ -85,14 +83,10 @@ def transform_data(ciudades_data):
 
     print("asi el dataframe", df_pivot)
 
-    connection = psycopg2.connect(
-        user=Variable.get("DB_USER"),
-        password=Variable.get("DB_PASSWORD"),
-        host=Variable.get("DB_HOST"),
-        port=Variable.get("DB_PORT"),
-        database=Variable.get("DB_DATABASE")
-    )
+    postgres_hook = PostgresHook(postgres_conn_id='redshift_belen')
+    connection = postgres_hook.get_conn()
     cursor = connection.cursor()
+    
 
     for index, row in df_pivot.iterrows():
         values = list(row.values)
