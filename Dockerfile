@@ -14,6 +14,7 @@ RUN python -m pip install --upgrade pip
 RUN python -m pip install pg8000
 RUN pip install pg8000
 RUN python -m pip install python-dotenv
+RUN python -m pip install yfinance
 
 
 COPY ./requirements.txt /

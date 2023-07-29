@@ -4,3 +4,4 @@ plugins
 env
 .DS_Store
 dags/.DS_Store
+.env
