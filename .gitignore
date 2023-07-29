@@ -2,4 +2,4 @@ dags/__pycache__
 logs
 plugins
 env
-
+.DS_Store
