@@ -8,7 +8,16 @@ from email import message
 from datetime import datetime, timedelta
 import smtplib
 
-
+config_thresholds= {
+    "Tokyo": {
+        "Environmental Quality": {"min": 2, "max": 8},
+        "Safety": {"min": 1, "max": 8}
+    },
+    "Belgium": {
+        "Environmental Quality": {"min": 3, "max": 7},
+        "Safety": {"min": 2, "max": 8}
+    }
+}
 
 insert_query_with_columns = """
     INSERT INTO bapintor_coderhouse.ciudades (
@@ -34,16 +43,6 @@ insert_query_with_columns = """
         VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
     
 """
-config_thresholds= {
-    "Tokyo": {
-        "Environmental Quality": {"min": 2, "max": 8},
-        "Safety": {"min": 1, "max": 8}
-    },
-    "Belgium": {
-        "Environmental Quality": {"min": 3, "max": 7},
-        "Safety": {"min": 2, "max": 8}
-    }
-}
 
 
 def get_data():
@@ -102,6 +101,40 @@ def transform_data(ciudades_data):
 
     connection.close()
 
+def verificar_threshold(**context):
+    postgres_hook = PostgresHook(postgres_conn_id='redshift_belen')
+    connection = postgres_hook.get_conn()
+    cursor = connection.cursor()
+
+    for city, categories in config_thresholds.items():
+        # Construir la consulta dinámicamente usando las columnas de la tabla
+        columns_query_str = ', '.join(f'"{category}"' for category in categories)
+        query = f"""
+            SELECT {columns_query_str}
+            FROM bapintor_coderhouse.ciudades
+            WHERE city = %s
+        """
+
+        cursor.execute(query, (city,))
+        row = cursor.fetchone()
+
+        if not row:
+            print(f"No se encontraron datos para la ciudad: {city}")
+            continue
+
+        for i, categoria in enumerate(row):
+            categoria_nombre = list(categories.keys())[i]
+            thresholds = categories[categoria_nombre]
+            min_t = thresholds.get('min')
+            max_t = thresholds.get('max')
+
+            if min_t is not None and categoria < min_t:
+                enviar_alerta(city, categoria_nombre, categoria, min_t, max_t, is_under_threshold=True)
+
+            if max_t is not None and categoria > max_t:
+                enviar_alerta(city, categoria_nombre, categoria, min_t, max_t, is_under_threshold=False)
+
+    connection.close()
 
 def enviar_alerta(ciudad, categoria, valor, min_t, max_t, is_under_threshold):
     try:
@@ -124,21 +157,6 @@ def enviar_alerta(ciudad, categoria, valor, min_t, max_t, is_under_threshold):
         print("Fallo: ",exception)
         raise exception
 
-    
-def enviar_fallo():
-    try:
-        x=smtplib.SMTP(Variable.get("SMTP_HOST"),Variable.get("SMTP_PORT"))
-        x.starttls()#
-        x.login(Variable.get('SMTP_EMAIL_FROM'), Variable.get('SMTP_PASSWORD'))
-        subject='FALLO DAG'
-        body_text="Mensaje de alerta sobre fallo"
-        message='Subject: {}\n\n{}'.format(subject,body_text)
-        x.sendmail(Variable.get('SMTP_EMAIL_FROM'), Variable.get('SMTP_EMAIL_TO'),message)
-        print('Exito')
-    except Exception as exception:
-        print(exception)
-        print('Failure')
-        raise exception
 
 def enviar_success():
     try:

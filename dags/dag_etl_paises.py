@@ -7,7 +7,7 @@ from email import message
 from airflow.hooks.base_hook import BaseHook
 from airflow.models import Variable
 import smtplib
-from script_etl import  transform_data, get_data, enviar_success, enviar_alerta, config_thresholds
+from script_etl import  transform_data, get_data,verificar_threshold, enviar_success, enviar_alerta, config_thresholds
 
 
 QUERY_CREATE_TABLE = """
@@ -33,42 +33,6 @@ CREATE TABLE IF NOT EXISTS bapintor_coderhouse.ciudades (
     "process_date" DATETIME DISTKEY
 );
 """
-
-def verificar_threshold(**context):
-    postgres_hook = PostgresHook(postgres_conn_id='redshift_belen')
-    connection = postgres_hook.get_conn()
-    cursor = connection.cursor()
-
-    for city, categories in config_thresholds.items():
-        # Construir la consulta dinámicamente usando las columnas de la tabla
-        columns_query_str = ', '.join(f'"{category}"' for category in categories)
-        query = f"""
-            SELECT {columns_query_str}
-            FROM bapintor_coderhouse.ciudades
-            WHERE city = %s
-        """
-
-        cursor.execute(query, (city,))
-        row = cursor.fetchone()
-
-        if not row:
-            print(f"No se encontraron datos para la ciudad: {city}")
-            continue
-
-        for i, categoria in enumerate(row):
-            categoria_nombre = list(categories.keys())[i]
-            thresholds = categories[categoria_nombre]
-            min_t = thresholds.get('min')
-            max_t = thresholds.get('max')
-
-            if min_t is not None and categoria < min_t:
-                enviar_alerta(city, categoria_nombre, categoria, min_t, max_t, is_under_threshold=True)
-
-            if max_t is not None and categoria > max_t:
-                enviar_alerta(city, categoria_nombre, categoria, min_t, max_t, is_under_threshold=False)
-
-    connection.close()
-
 
 default_args = {
     'owner': 'Belenpintor',
