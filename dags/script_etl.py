@@ -122,6 +122,7 @@ def enviar_alerta(ciudad, categoria, valor, min_t, max_t, is_under_threshold):
             f"{'mínimo' if is_under_threshold else 'máximo'} ({min_t if is_under_threshold else max_t})."
         )
         message = f'Subject: {subject}\n\n{body_text}'
+        message = message.encode('utf-8')
         x.sendmail(Variable.get('SMTP_EMAIL_FROM'), Variable.get('SMTP_EMAIL_TO'), message)
 
         print('Exito')

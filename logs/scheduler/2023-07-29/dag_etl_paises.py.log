@@ -6513,3 +6513,763 @@ ImportError: cannot import name 'thresholds' from 'script_etl' (/opt/airflow/dag
 [2023-07-29 03:24:52,001] {processor.py:153} INFO - Started process (PID=8144) to work on /opt/airflow/dags/dag_etl_paises.py
 [2023-07-29 03:24:52,006] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
 [2023-07-29 03:24:52,018] {logging_mixin.py:115} INFO - [2023-07-29 03:24:52,018] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:24:54,633] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:24:54,785] {logging_mixin.py:115} INFO - [2023-07-29 03:24:54,784] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:24:54,828] {logging_mixin.py:115} INFO - [2023-07-29 03:24:54,828] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:24:54,854] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 2.877 seconds
+[2023-07-29 03:25:05,275] {processor.py:153} INFO - Started process (PID=8156) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:05,313] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:25:05,317] {logging_mixin.py:115} INFO - [2023-07-29 03:25:05,317] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:07,434] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:07,460] {logging_mixin.py:115} INFO - [2023-07-29 03:25:07,459] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:25:07,495] {logging_mixin.py:115} INFO - [2023-07-29 03:25:07,494] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:25:07,512] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 2.306 seconds
+[2023-07-29 03:25:17,763] {processor.py:153} INFO - Started process (PID=8168) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:17,773] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:25:17,776] {logging_mixin.py:115} INFO - [2023-07-29 03:25:17,775] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:20,637] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:20,818] {logging_mixin.py:115} INFO - [2023-07-29 03:25:20,815] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:25:21,395] {logging_mixin.py:115} INFO - [2023-07-29 03:25:21,395] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:25:21,471] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 3.717 seconds
+[2023-07-29 03:25:31,756] {processor.py:153} INFO - Started process (PID=8185) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:31,760] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:25:31,763] {logging_mixin.py:115} INFO - [2023-07-29 03:25:31,763] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:32,768] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:32,865] {logging_mixin.py:115} INFO - [2023-07-29 03:25:32,865] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:25:32,903] {logging_mixin.py:115} INFO - [2023-07-29 03:25:32,903] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:25:32,924] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.174 seconds
+[2023-07-29 03:25:43,030] {processor.py:153} INFO - Started process (PID=8197) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:43,034] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:25:43,037] {logging_mixin.py:115} INFO - [2023-07-29 03:25:43,037] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:43,773] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:43,798] {logging_mixin.py:115} INFO - [2023-07-29 03:25:43,798] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:25:43,837] {logging_mixin.py:115} INFO - [2023-07-29 03:25:43,837] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:25:43,858] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.834 seconds
+[2023-07-29 03:25:53,968] {processor.py:153} INFO - Started process (PID=8209) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:53,972] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:25:53,975] {logging_mixin.py:115} INFO - [2023-07-29 03:25:53,974] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:54,763] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:25:54,787] {logging_mixin.py:115} INFO - [2023-07-29 03:25:54,787] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:25:54,837] {logging_mixin.py:115} INFO - [2023-07-29 03:25:54,837] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:25:54,856] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.895 seconds
+[2023-07-29 03:26:04,974] {processor.py:153} INFO - Started process (PID=8221) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:04,979] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:26:04,983] {logging_mixin.py:115} INFO - [2023-07-29 03:26:04,983] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:05,599] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:05,728] {logging_mixin.py:115} INFO - [2023-07-29 03:26:05,727] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:26:05,788] {logging_mixin.py:115} INFO - [2023-07-29 03:26:05,788] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:26:05,810] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.844 seconds
+[2023-07-29 03:26:16,069] {processor.py:153} INFO - Started process (PID=8233) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:16,072] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:26:16,075] {logging_mixin.py:115} INFO - [2023-07-29 03:26:16,074] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:16,866] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:16,887] {logging_mixin.py:115} INFO - [2023-07-29 03:26:16,886] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:26:16,924] {logging_mixin.py:115} INFO - [2023-07-29 03:26:16,924] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:26:16,946] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.883 seconds
+[2023-07-29 03:26:27,070] {processor.py:153} INFO - Started process (PID=8245) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:27,073] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:26:27,076] {logging_mixin.py:115} INFO - [2023-07-29 03:26:27,076] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:27,954] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:27,995] {logging_mixin.py:115} INFO - [2023-07-29 03:26:27,994] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:26:28,047] {logging_mixin.py:115} INFO - [2023-07-29 03:26:28,047] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:26:28,066] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.002 seconds
+[2023-07-29 03:26:38,206] {processor.py:153} INFO - Started process (PID=8255) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:38,209] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:26:38,216] {logging_mixin.py:115} INFO - [2023-07-29 03:26:38,216] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:39,073] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:39,175] {logging_mixin.py:115} INFO - [2023-07-29 03:26:39,174] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:26:39,208] {logging_mixin.py:115} INFO - [2023-07-29 03:26:39,208] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:26:39,234] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.041 seconds
+[2023-07-29 03:26:49,375] {processor.py:153} INFO - Started process (PID=8266) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:49,382] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:26:49,385] {logging_mixin.py:115} INFO - [2023-07-29 03:26:49,385] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:50,817] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:26:50,837] {logging_mixin.py:115} INFO - [2023-07-29 03:26:50,837] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:26:50,874] {logging_mixin.py:115} INFO - [2023-07-29 03:26:50,874] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:26:50,892] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.530 seconds
+[2023-07-29 03:27:01,003] {processor.py:153} INFO - Started process (PID=8278) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:01,010] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:27:01,013] {logging_mixin.py:115} INFO - [2023-07-29 03:27:01,013] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:02,798] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:02,818] {logging_mixin.py:115} INFO - [2023-07-29 03:27:02,818] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:27:02,857] {logging_mixin.py:115} INFO - [2023-07-29 03:27:02,857] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:27:02,876] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.882 seconds
+[2023-07-29 03:27:13,103] {processor.py:153} INFO - Started process (PID=8290) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:13,115] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:27:13,119] {logging_mixin.py:115} INFO - [2023-07-29 03:27:13,119] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:14,617] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:14,721] {logging_mixin.py:115} INFO - [2023-07-29 03:27:14,721] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:27:14,759] {logging_mixin.py:115} INFO - [2023-07-29 03:27:14,759] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:27:14,782] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.710 seconds
+[2023-07-29 03:27:24,935] {processor.py:153} INFO - Started process (PID=8302) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:24,941] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:27:24,947] {logging_mixin.py:115} INFO - [2023-07-29 03:27:24,947] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:26,441] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:26,461] {logging_mixin.py:115} INFO - [2023-07-29 03:27:26,461] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:27:26,501] {logging_mixin.py:115} INFO - [2023-07-29 03:27:26,501] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:27:26,520] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.606 seconds
+[2023-07-29 03:27:36,630] {processor.py:153} INFO - Started process (PID=8315) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:36,638] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:27:36,644] {logging_mixin.py:115} INFO - [2023-07-29 03:27:36,644] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:38,422] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:38,444] {logging_mixin.py:115} INFO - [2023-07-29 03:27:38,443] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:27:38,479] {logging_mixin.py:115} INFO - [2023-07-29 03:27:38,479] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:27:38,503] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.881 seconds
+[2023-07-29 03:27:49,884] {processor.py:153} INFO - Started process (PID=8329) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:49,894] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:27:49,920] {logging_mixin.py:115} INFO - [2023-07-29 03:27:49,919] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:53,042] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:27:53,142] {logging_mixin.py:115} INFO - [2023-07-29 03:27:53,141] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:27:53,273] {logging_mixin.py:115} INFO - [2023-07-29 03:27:53,272] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:27:53,296] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 3.567 seconds
+[2023-07-29 03:28:03,655] {processor.py:153} INFO - Started process (PID=8344) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:03,660] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:28:03,663] {logging_mixin.py:115} INFO - [2023-07-29 03:28:03,662] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:04,255] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:04,292] {logging_mixin.py:115} INFO - [2023-07-29 03:28:04,291] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:28:04,356] {logging_mixin.py:115} INFO - [2023-07-29 03:28:04,355] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:28:04,376] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.727 seconds
+[2023-07-29 03:28:14,472] {processor.py:153} INFO - Started process (PID=8356) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:14,475] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:28:14,478] {logging_mixin.py:115} INFO - [2023-07-29 03:28:14,478] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:15,037] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:15,062] {logging_mixin.py:115} INFO - [2023-07-29 03:28:15,061] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:28:15,099] {logging_mixin.py:115} INFO - [2023-07-29 03:28:15,099] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:28:15,121] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.655 seconds
+[2023-07-29 03:28:25,228] {processor.py:153} INFO - Started process (PID=8368) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:25,231] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:28:25,235] {logging_mixin.py:115} INFO - [2023-07-29 03:28:25,234] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:26,005] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:26,104] {logging_mixin.py:115} INFO - [2023-07-29 03:28:26,103] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:28:26,143] {logging_mixin.py:115} INFO - [2023-07-29 03:28:26,142] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:28:26,182] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.959 seconds
+[2023-07-29 03:28:36,286] {processor.py:153} INFO - Started process (PID=8380) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:36,289] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:28:36,293] {logging_mixin.py:115} INFO - [2023-07-29 03:28:36,293] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:36,868] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:36,890] {logging_mixin.py:115} INFO - [2023-07-29 03:28:36,889] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:28:36,923] {logging_mixin.py:115} INFO - [2023-07-29 03:28:36,922] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:28:36,940] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.660 seconds
+[2023-07-29 03:28:47,037] {processor.py:153} INFO - Started process (PID=8392) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:47,041] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:28:47,045] {logging_mixin.py:115} INFO - [2023-07-29 03:28:47,044] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:47,730] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:47,750] {logging_mixin.py:115} INFO - [2023-07-29 03:28:47,749] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:28:47,787] {logging_mixin.py:115} INFO - [2023-07-29 03:28:47,787] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:28:47,822] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.793 seconds
+[2023-07-29 03:28:57,945] {processor.py:153} INFO - Started process (PID=8404) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:57,948] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:28:57,951] {logging_mixin.py:115} INFO - [2023-07-29 03:28:57,951] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:58,734] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:28:58,834] {logging_mixin.py:115} INFO - [2023-07-29 03:28:58,833] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:28:58,865] {logging_mixin.py:115} INFO - [2023-07-29 03:28:58,865] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:28:58,888] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.950 seconds
+[2023-07-29 03:29:09,060] {processor.py:153} INFO - Started process (PID=8419) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:09,064] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:29:09,067] {logging_mixin.py:115} INFO - [2023-07-29 03:29:09,067] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:09,921] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:09,942] {logging_mixin.py:115} INFO - [2023-07-29 03:29:09,941] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:29:09,976] {logging_mixin.py:115} INFO - [2023-07-29 03:29:09,976] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:29:09,995] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.941 seconds
+[2023-07-29 03:29:20,130] {processor.py:153} INFO - Started process (PID=8431) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:20,135] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:29:20,139] {logging_mixin.py:115} INFO - [2023-07-29 03:29:20,139] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:20,841] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:20,862] {logging_mixin.py:115} INFO - [2023-07-29 03:29:20,861] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:29:20,896] {logging_mixin.py:115} INFO - [2023-07-29 03:29:20,896] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:29:20,916] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.795 seconds
+[2023-07-29 03:29:31,031] {processor.py:153} INFO - Started process (PID=8443) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:31,035] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:29:31,038] {logging_mixin.py:115} INFO - [2023-07-29 03:29:31,038] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:31,621] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:31,722] {logging_mixin.py:115} INFO - [2023-07-29 03:29:31,722] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:29:31,753] {logging_mixin.py:115} INFO - [2023-07-29 03:29:31,753] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:29:31,775] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.750 seconds
+[2023-07-29 03:29:41,861] {processor.py:153} INFO - Started process (PID=8455) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:41,867] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:29:41,871] {logging_mixin.py:115} INFO - [2023-07-29 03:29:41,870] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:42,469] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:42,489] {logging_mixin.py:115} INFO - [2023-07-29 03:29:42,488] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:29:42,523] {logging_mixin.py:115} INFO - [2023-07-29 03:29:42,522] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:29:42,542] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.687 seconds
+[2023-07-29 03:29:52,646] {processor.py:153} INFO - Started process (PID=8467) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:52,649] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:29:52,653] {logging_mixin.py:115} INFO - [2023-07-29 03:29:52,652] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:53,224] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:29:53,244] {logging_mixin.py:115} INFO - [2023-07-29 03:29:53,243] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:29:53,278] {logging_mixin.py:115} INFO - [2023-07-29 03:29:53,278] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:29:53,318] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.679 seconds
+[2023-07-29 03:30:03,442] {processor.py:153} INFO - Started process (PID=8479) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:03,448] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:30:03,452] {logging_mixin.py:115} INFO - [2023-07-29 03:30:03,452] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:04,373] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:04,465] {logging_mixin.py:115} INFO - [2023-07-29 03:30:04,464] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:30:04,495] {logging_mixin.py:115} INFO - [2023-07-29 03:30:04,495] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:30:04,516] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.081 seconds
+[2023-07-29 03:30:14,617] {processor.py:153} INFO - Started process (PID=8491) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:14,620] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:30:14,624] {logging_mixin.py:115} INFO - [2023-07-29 03:30:14,623] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:15,169] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:15,193] {logging_mixin.py:115} INFO - [2023-07-29 03:30:15,192] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:30:15,242] {logging_mixin.py:115} INFO - [2023-07-29 03:30:15,242] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:30:15,270] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.659 seconds
+[2023-07-29 03:30:25,678] {processor.py:153} INFO - Started process (PID=8503) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:25,685] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:30:25,690] {logging_mixin.py:115} INFO - [2023-07-29 03:30:25,690] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:26,273] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:26,293] {logging_mixin.py:115} INFO - [2023-07-29 03:30:26,292] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:30:26,338] {logging_mixin.py:115} INFO - [2023-07-29 03:30:26,338] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:30:26,357] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.689 seconds
+[2023-07-29 03:30:36,461] {processor.py:153} INFO - Started process (PID=8515) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:36,464] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:30:36,467] {logging_mixin.py:115} INFO - [2023-07-29 03:30:36,467] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:37,059] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:37,146] {logging_mixin.py:115} INFO - [2023-07-29 03:30:37,146] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:30:37,182] {logging_mixin.py:115} INFO - [2023-07-29 03:30:37,182] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:30:37,209] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.754 seconds
+[2023-07-29 03:30:47,310] {processor.py:153} INFO - Started process (PID=8527) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:47,315] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:30:47,320] {logging_mixin.py:115} INFO - [2023-07-29 03:30:47,319] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:48,838] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:48,859] {logging_mixin.py:115} INFO - [2023-07-29 03:30:48,858] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:30:48,911] {logging_mixin.py:115} INFO - [2023-07-29 03:30:48,911] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:30:48,973] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.569 seconds
+[2023-07-29 03:30:59,500] {processor.py:153} INFO - Started process (PID=8539) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:30:59,504] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:30:59,507] {logging_mixin.py:115} INFO - [2023-07-29 03:30:59,507] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:00,498] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:00,523] {logging_mixin.py:115} INFO - [2023-07-29 03:31:00,522] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:31:00,564] {logging_mixin.py:115} INFO - [2023-07-29 03:31:00,564] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:31:00,583] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.089 seconds
+[2023-07-29 03:31:10,687] {processor.py:153} INFO - Started process (PID=8551) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:10,691] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:31:10,694] {logging_mixin.py:115} INFO - [2023-07-29 03:31:10,694] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:11,596] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:11,756] {logging_mixin.py:115} INFO - [2023-07-29 03:31:11,756] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:31:11,798] {logging_mixin.py:115} INFO - [2023-07-29 03:31:11,798] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:31:11,827] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.146 seconds
+[2023-07-29 03:31:22,415] {processor.py:153} INFO - Started process (PID=8563) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:22,419] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:31:22,423] {logging_mixin.py:115} INFO - [2023-07-29 03:31:22,423] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:23,033] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:23,053] {logging_mixin.py:115} INFO - [2023-07-29 03:31:23,052] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:31:23,094] {logging_mixin.py:115} INFO - [2023-07-29 03:31:23,094] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:31:23,113] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.703 seconds
+[2023-07-29 03:31:33,221] {processor.py:153} INFO - Started process (PID=8575) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:33,225] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:31:33,228] {logging_mixin.py:115} INFO - [2023-07-29 03:31:33,228] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:33,824] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:33,844] {logging_mixin.py:115} INFO - [2023-07-29 03:31:33,844] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:31:33,881] {logging_mixin.py:115} INFO - [2023-07-29 03:31:33,881] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:31:33,899] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.684 seconds
+[2023-07-29 03:31:43,995] {processor.py:153} INFO - Started process (PID=8587) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:43,998] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:31:44,001] {logging_mixin.py:115} INFO - [2023-07-29 03:31:44,001] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:44,724] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:44,758] {logging_mixin.py:115} INFO - [2023-07-29 03:31:44,757] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:31:44,793] {logging_mixin.py:115} INFO - [2023-07-29 03:31:44,793] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:31:44,810] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.821 seconds
+[2023-07-29 03:31:55,089] {processor.py:153} INFO - Started process (PID=8599) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:55,098] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:31:55,103] {logging_mixin.py:115} INFO - [2023-07-29 03:31:55,103] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:58,280] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:31:58,415] {logging_mixin.py:115} INFO - [2023-07-29 03:31:58,415] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:31:58,445] {logging_mixin.py:115} INFO - [2023-07-29 03:31:58,444] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:31:58,465] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 3.402 seconds
+[2023-07-29 03:32:08,613] {processor.py:153} INFO - Started process (PID=8611) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:08,617] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:32:08,621] {logging_mixin.py:115} INFO - [2023-07-29 03:32:08,621] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:10,120] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:10,140] {logging_mixin.py:115} INFO - [2023-07-29 03:32:10,139] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:32:10,173] {logging_mixin.py:115} INFO - [2023-07-29 03:32:10,173] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:32:10,191] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.588 seconds
+[2023-07-29 03:32:20,320] {processor.py:153} INFO - Started process (PID=8623) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:20,333] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:32:20,340] {logging_mixin.py:115} INFO - [2023-07-29 03:32:20,340] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:21,611] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:21,641] {logging_mixin.py:115} INFO - [2023-07-29 03:32:21,640] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:32:21,705] {logging_mixin.py:115} INFO - [2023-07-29 03:32:21,705] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:32:21,760] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.451 seconds
+[2023-07-29 03:32:31,907] {processor.py:153} INFO - Started process (PID=8635) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:31,912] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:32:31,915] {logging_mixin.py:115} INFO - [2023-07-29 03:32:31,915] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:32,798] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:33,015] {logging_mixin.py:115} INFO - [2023-07-29 03:32:33,014] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:32:33,056] {logging_mixin.py:115} INFO - [2023-07-29 03:32:33,056] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:32:33,084] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.183 seconds
+[2023-07-29 03:32:43,255] {processor.py:153} INFO - Started process (PID=8647) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:43,259] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:32:43,262] {logging_mixin.py:115} INFO - [2023-07-29 03:32:43,262] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:44,406] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:44,442] {logging_mixin.py:115} INFO - [2023-07-29 03:32:44,441] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:32:44,504] {logging_mixin.py:115} INFO - [2023-07-29 03:32:44,503] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:32:44,564] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.319 seconds
+[2023-07-29 03:32:54,752] {processor.py:153} INFO - Started process (PID=8659) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:54,756] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:32:54,759] {logging_mixin.py:115} INFO - [2023-07-29 03:32:54,759] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:55,631] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:32:55,653] {logging_mixin.py:115} INFO - [2023-07-29 03:32:55,652] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:32:55,689] {logging_mixin.py:115} INFO - [2023-07-29 03:32:55,689] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:32:55,713] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.966 seconds
+[2023-07-29 03:33:05,841] {processor.py:153} INFO - Started process (PID=8671) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:05,846] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:33:05,849] {logging_mixin.py:115} INFO - [2023-07-29 03:33:05,849] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:06,604] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:06,716] {logging_mixin.py:115} INFO - [2023-07-29 03:33:06,715] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:33:06,755] {logging_mixin.py:115} INFO - [2023-07-29 03:33:06,755] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:33:06,782] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.947 seconds
+[2023-07-29 03:33:17,005] {processor.py:153} INFO - Started process (PID=8683) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:17,011] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:33:17,018] {logging_mixin.py:115} INFO - [2023-07-29 03:33:17,018] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:18,371] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:18,397] {logging_mixin.py:115} INFO - [2023-07-29 03:33:18,396] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:33:18,460] {logging_mixin.py:115} INFO - [2023-07-29 03:33:18,459] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:33:18,503] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.511 seconds
+[2023-07-29 03:33:28,622] {processor.py:153} INFO - Started process (PID=8695) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:28,630] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:33:28,633] {logging_mixin.py:115} INFO - [2023-07-29 03:33:28,632] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:29,581] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:29,609] {logging_mixin.py:115} INFO - [2023-07-29 03:33:29,609] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:33:29,957] {logging_mixin.py:115} INFO - [2023-07-29 03:33:29,955] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:33:30,013] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.397 seconds
+[2023-07-29 03:33:40,689] {processor.py:153} INFO - Started process (PID=8726) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:40,692] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:33:40,701] {logging_mixin.py:115} INFO - [2023-07-29 03:33:40,701] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:43,087] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:43,304] {logging_mixin.py:115} INFO - [2023-07-29 03:33:43,303] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:33:43,345] {logging_mixin.py:115} INFO - [2023-07-29 03:33:43,345] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:33:43,371] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 2.704 seconds
+[2023-07-29 03:33:53,543] {processor.py:153} INFO - Started process (PID=8744) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:53,550] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:33:53,553] {logging_mixin.py:115} INFO - [2023-07-29 03:33:53,553] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:54,897] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:33:54,934] {logging_mixin.py:115} INFO - [2023-07-29 03:33:54,933] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:33:54,999] {logging_mixin.py:115} INFO - [2023-07-29 03:33:54,998] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:33:55,018] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.495 seconds
+[2023-07-29 03:34:05,193] {processor.py:153} INFO - Started process (PID=8756) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:05,197] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:34:05,202] {logging_mixin.py:115} INFO - [2023-07-29 03:34:05,201] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:06,693] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:06,714] {logging_mixin.py:115} INFO - [2023-07-29 03:34:06,713] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:34:06,785] {logging_mixin.py:115} INFO - [2023-07-29 03:34:06,784] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:34:06,807] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.638 seconds
+[2023-07-29 03:34:16,939] {processor.py:153} INFO - Started process (PID=8768) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:16,942] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:34:16,946] {logging_mixin.py:115} INFO - [2023-07-29 03:34:16,945] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:18,632] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:18,842] {logging_mixin.py:115} INFO - [2023-07-29 03:34:18,842] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:34:18,883] {logging_mixin.py:115} INFO - [2023-07-29 03:34:18,883] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:34:18,905] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.982 seconds
+[2023-07-29 03:34:29,192] {processor.py:153} INFO - Started process (PID=8779) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:29,202] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:34:29,206] {logging_mixin.py:115} INFO - [2023-07-29 03:34:29,206] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:32,618] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:32,710] {logging_mixin.py:115} INFO - [2023-07-29 03:34:32,710] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:34:33,550] {logging_mixin.py:115} INFO - [2023-07-29 03:34:33,549] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:34:33,734] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 4.611 seconds
+[2023-07-29 03:34:44,983] {processor.py:153} INFO - Started process (PID=8794) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:44,992] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:34:44,996] {logging_mixin.py:115} INFO - [2023-07-29 03:34:44,995] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:46,204] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:46,238] {logging_mixin.py:115} INFO - [2023-07-29 03:34:46,237] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:34:46,323] {logging_mixin.py:115} INFO - [2023-07-29 03:34:46,323] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:34:46,392] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.417 seconds
+[2023-07-29 03:34:56,698] {processor.py:153} INFO - Started process (PID=8806) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:56,702] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:34:56,705] {logging_mixin.py:115} INFO - [2023-07-29 03:34:56,705] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:58,308] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:34:58,517] {logging_mixin.py:115} INFO - [2023-07-29 03:34:58,516] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:34:58,549] {logging_mixin.py:115} INFO - [2023-07-29 03:34:58,549] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:34:58,572] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.881 seconds
+[2023-07-29 03:35:08,854] {processor.py:153} INFO - Started process (PID=8818) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:08,858] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:35:08,862] {logging_mixin.py:115} INFO - [2023-07-29 03:35:08,861] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:09,681] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:09,725] {logging_mixin.py:115} INFO - [2023-07-29 03:35:09,717] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:35:09,822] {logging_mixin.py:115} INFO - [2023-07-29 03:35:09,822] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:35:09,856] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.013 seconds
+[2023-07-29 03:35:19,993] {processor.py:153} INFO - Started process (PID=8830) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:19,997] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:35:20,003] {logging_mixin.py:115} INFO - [2023-07-29 03:35:20,003] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:21,013] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:21,067] {logging_mixin.py:115} INFO - [2023-07-29 03:35:21,067] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:35:21,141] {logging_mixin.py:115} INFO - [2023-07-29 03:35:21,141] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:35:21,185] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.212 seconds
+[2023-07-29 03:35:31,489] {processor.py:153} INFO - Started process (PID=8842) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:31,492] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:35:31,495] {logging_mixin.py:115} INFO - [2023-07-29 03:35:31,495] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:32,307] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:32,455] {logging_mixin.py:115} INFO - [2023-07-29 03:35:32,455] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:35:32,487] {logging_mixin.py:115} INFO - [2023-07-29 03:35:32,487] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:35:32,509] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.032 seconds
+[2023-07-29 03:35:42,640] {processor.py:153} INFO - Started process (PID=8857) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:42,643] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:35:42,646] {logging_mixin.py:115} INFO - [2023-07-29 03:35:42,646] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:43,320] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:43,342] {logging_mixin.py:115} INFO - [2023-07-29 03:35:43,341] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:35:43,401] {logging_mixin.py:115} INFO - [2023-07-29 03:35:43,401] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:35:43,439] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.805 seconds
+[2023-07-29 03:35:54,383] {processor.py:153} INFO - Started process (PID=8869) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:54,386] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:35:54,390] {logging_mixin.py:115} INFO - [2023-07-29 03:35:54,389] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:55,052] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:35:55,072] {logging_mixin.py:115} INFO - [2023-07-29 03:35:55,071] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:35:55,111] {logging_mixin.py:115} INFO - [2023-07-29 03:35:55,111] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:35:55,129] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.752 seconds
+[2023-07-29 03:36:05,452] {processor.py:153} INFO - Started process (PID=8881) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:05,455] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:36:05,459] {logging_mixin.py:115} INFO - [2023-07-29 03:36:05,458] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:06,242] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:06,279] {logging_mixin.py:115} INFO - [2023-07-29 03:36:06,279] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:36:06,332] {logging_mixin.py:115} INFO - [2023-07-29 03:36:06,332] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:36:06,354] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.908 seconds
+[2023-07-29 03:36:16,571] {processor.py:153} INFO - Started process (PID=8893) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:16,574] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:36:16,577] {logging_mixin.py:115} INFO - [2023-07-29 03:36:16,577] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:17,154] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:17,452] {logging_mixin.py:115} INFO - [2023-07-29 03:36:17,451] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:36:17,519] {logging_mixin.py:115} INFO - [2023-07-29 03:36:17,518] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:36:17,620] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.057 seconds
+[2023-07-29 03:36:27,871] {processor.py:153} INFO - Started process (PID=8905) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:27,874] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:36:27,877] {logging_mixin.py:115} INFO - [2023-07-29 03:36:27,876] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:28,853] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:28,893] {logging_mixin.py:115} INFO - [2023-07-29 03:36:28,892] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:36:28,970] {logging_mixin.py:115} INFO - [2023-07-29 03:36:28,970] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:36:28,998] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.134 seconds
+[2023-07-29 03:36:39,155] {processor.py:153} INFO - Started process (PID=8917) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:39,158] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:36:39,161] {logging_mixin.py:115} INFO - [2023-07-29 03:36:39,161] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:40,094] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:40,114] {logging_mixin.py:115} INFO - [2023-07-29 03:36:40,113] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:36:40,150] {logging_mixin.py:115} INFO - [2023-07-29 03:36:40,150] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:36:40,169] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.023 seconds
+[2023-07-29 03:36:50,296] {processor.py:153} INFO - Started process (PID=8929) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:50,300] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:36:50,319] {logging_mixin.py:115} INFO - [2023-07-29 03:36:50,319] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:51,111] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:36:51,214] {logging_mixin.py:115} INFO - [2023-07-29 03:36:51,213] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:36:51,251] {logging_mixin.py:115} INFO - [2023-07-29 03:36:51,250] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:36:51,275] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.993 seconds
+[2023-07-29 03:37:01,392] {processor.py:153} INFO - Started process (PID=8941) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:01,395] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:37:01,398] {logging_mixin.py:115} INFO - [2023-07-29 03:37:01,398] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:01,984] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:02,006] {logging_mixin.py:115} INFO - [2023-07-29 03:37:02,005] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:37:02,082] {logging_mixin.py:115} INFO - [2023-07-29 03:37:02,081] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:37:02,115] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.729 seconds
+[2023-07-29 03:37:12,433] {processor.py:153} INFO - Started process (PID=8953) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:12,436] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:37:12,441] {logging_mixin.py:115} INFO - [2023-07-29 03:37:12,441] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:13,065] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:13,085] {logging_mixin.py:115} INFO - [2023-07-29 03:37:13,084] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:37:13,118] {logging_mixin.py:115} INFO - [2023-07-29 03:37:13,118] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:37:13,136] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.709 seconds
+[2023-07-29 03:37:23,234] {processor.py:153} INFO - Started process (PID=8965) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:23,237] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:37:23,241] {logging_mixin.py:115} INFO - [2023-07-29 03:37:23,240] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:24,064] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:24,175] {logging_mixin.py:115} INFO - [2023-07-29 03:37:24,174] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:37:24,211] {logging_mixin.py:115} INFO - [2023-07-29 03:37:24,211] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:37:24,234] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.006 seconds
+[2023-07-29 03:37:34,364] {processor.py:153} INFO - Started process (PID=8977) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:34,368] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:37:34,372] {logging_mixin.py:115} INFO - [2023-07-29 03:37:34,371] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:35,070] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:35,090] {logging_mixin.py:115} INFO - [2023-07-29 03:37:35,089] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:37:35,127] {logging_mixin.py:115} INFO - [2023-07-29 03:37:35,127] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:37:35,146] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.788 seconds
+[2023-07-29 03:37:46,084] {processor.py:153} INFO - Started process (PID=8989) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:46,087] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:37:46,090] {logging_mixin.py:115} INFO - [2023-07-29 03:37:46,090] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:46,732] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:46,751] {logging_mixin.py:115} INFO - [2023-07-29 03:37:46,751] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:37:46,786] {logging_mixin.py:115} INFO - [2023-07-29 03:37:46,786] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:37:46,805] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.726 seconds
+[2023-07-29 03:37:56,935] {processor.py:153} INFO - Started process (PID=9004) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:56,942] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:37:56,946] {logging_mixin.py:115} INFO - [2023-07-29 03:37:56,946] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:57,820] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:37:57,923] {logging_mixin.py:115} INFO - [2023-07-29 03:37:57,923] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:37:57,954] {logging_mixin.py:115} INFO - [2023-07-29 03:37:57,954] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:37:57,977] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.049 seconds
+[2023-07-29 03:38:08,074] {processor.py:153} INFO - Started process (PID=9016) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:08,077] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:38:08,080] {logging_mixin.py:115} INFO - [2023-07-29 03:38:08,080] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:08,846] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:08,871] {logging_mixin.py:115} INFO - [2023-07-29 03:38:08,870] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:38:08,915] {logging_mixin.py:115} INFO - [2023-07-29 03:38:08,914] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:38:08,938] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.870 seconds
+[2023-07-29 03:38:19,046] {processor.py:153} INFO - Started process (PID=9028) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:19,049] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:38:19,053] {logging_mixin.py:115} INFO - [2023-07-29 03:38:19,053] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:19,613] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:19,708] {logging_mixin.py:115} INFO - [2023-07-29 03:38:19,702] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:38:19,851] {logging_mixin.py:115} INFO - [2023-07-29 03:38:19,830] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:38:19,903] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.863 seconds
+[2023-07-29 03:38:30,068] {processor.py:153} INFO - Started process (PID=9040) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:30,074] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:38:30,078] {logging_mixin.py:115} INFO - [2023-07-29 03:38:30,077] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:30,946] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:30,981] {logging_mixin.py:115} INFO - [2023-07-29 03:38:30,980] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:38:31,014] {logging_mixin.py:115} INFO - [2023-07-29 03:38:31,014] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:38:31,033] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.974 seconds
+[2023-07-29 03:38:41,184] {processor.py:153} INFO - Started process (PID=9052) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:41,187] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:38:41,194] {logging_mixin.py:115} INFO - [2023-07-29 03:38:41,194] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:42,227] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:42,446] {logging_mixin.py:115} INFO - [2023-07-29 03:38:42,446] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:38:42,499] {logging_mixin.py:115} INFO - [2023-07-29 03:38:42,499] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:38:42,521] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.357 seconds
+[2023-07-29 03:38:52,629] {processor.py:153} INFO - Started process (PID=9064) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:52,633] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:38:52,636] {logging_mixin.py:115} INFO - [2023-07-29 03:38:52,636] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:53,570] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:38:53,594] {logging_mixin.py:115} INFO - [2023-07-29 03:38:53,594] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:38:53,641] {logging_mixin.py:115} INFO - [2023-07-29 03:38:53,641] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:38:53,663] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.044 seconds
+[2023-07-29 03:39:03,788] {processor.py:153} INFO - Started process (PID=9079) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:03,792] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:39:03,799] {logging_mixin.py:115} INFO - [2023-07-29 03:39:03,798] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:04,939] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:04,999] {logging_mixin.py:115} INFO - [2023-07-29 03:39:04,998] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:39:05,054] {logging_mixin.py:115} INFO - [2023-07-29 03:39:05,054] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:39:05,084] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.307 seconds
+[2023-07-29 03:39:15,264] {processor.py:153} INFO - Started process (PID=9091) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:15,269] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:39:15,272] {logging_mixin.py:115} INFO - [2023-07-29 03:39:15,272] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:16,021] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:16,118] {logging_mixin.py:115} INFO - [2023-07-29 03:39:16,118] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:39:16,153] {logging_mixin.py:115} INFO - [2023-07-29 03:39:16,152] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:39:16,182] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.925 seconds
+[2023-07-29 03:39:26,626] {processor.py:153} INFO - Started process (PID=9115) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:26,631] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:39:26,634] {logging_mixin.py:115} INFO - [2023-07-29 03:39:26,634] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:27,498] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:27,519] {logging_mixin.py:115} INFO - [2023-07-29 03:39:27,519] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:39:27,556] {logging_mixin.py:115} INFO - [2023-07-29 03:39:27,556] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:39:27,584] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.964 seconds
+[2023-07-29 03:39:37,697] {processor.py:153} INFO - Started process (PID=9127) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:37,700] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:39:37,704] {logging_mixin.py:115} INFO - [2023-07-29 03:39:37,704] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:39,151] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:39,245] {logging_mixin.py:115} INFO - [2023-07-29 03:39:39,244] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:39:39,555] {logging_mixin.py:115} INFO - [2023-07-29 03:39:39,555] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:39:39,749] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 2.059 seconds
+[2023-07-29 03:39:50,116] {processor.py:153} INFO - Started process (PID=9145) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:50,123] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:39:50,126] {logging_mixin.py:115} INFO - [2023-07-29 03:39:50,126] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:50,859] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:39:50,947] {logging_mixin.py:115} INFO - [2023-07-29 03:39:50,946] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:39:50,978] {logging_mixin.py:115} INFO - [2023-07-29 03:39:50,978] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:39:51,000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.893 seconds
+[2023-07-29 03:40:01,116] {processor.py:153} INFO - Started process (PID=9157) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:01,124] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:40:01,135] {logging_mixin.py:115} INFO - [2023-07-29 03:40:01,134] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:01,956] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:01,982] {logging_mixin.py:115} INFO - [2023-07-29 03:40:01,982] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:40:02,016] {logging_mixin.py:115} INFO - [2023-07-29 03:40:02,016] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:40:02,035] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.930 seconds
+[2023-07-29 03:40:12,179] {processor.py:153} INFO - Started process (PID=9169) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:12,184] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:40:12,187] {logging_mixin.py:115} INFO - [2023-07-29 03:40:12,187] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:12,855] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:12,920] {logging_mixin.py:115} INFO - [2023-07-29 03:40:12,919] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:40:13,053] {logging_mixin.py:115} INFO - [2023-07-29 03:40:13,052] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:40:13,145] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.975 seconds
+[2023-07-29 03:40:23,312] {processor.py:153} INFO - Started process (PID=9181) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:23,316] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:40:23,319] {logging_mixin.py:115} INFO - [2023-07-29 03:40:23,319] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:24,419] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:24,572] {logging_mixin.py:115} INFO - [2023-07-29 03:40:24,571] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:40:24,610] {logging_mixin.py:115} INFO - [2023-07-29 03:40:24,610] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:40:24,653] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.347 seconds
+[2023-07-29 03:40:34,786] {processor.py:153} INFO - Started process (PID=9193) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:34,789] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:40:34,792] {logging_mixin.py:115} INFO - [2023-07-29 03:40:34,792] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:35,509] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:35,684] {logging_mixin.py:115} INFO - [2023-07-29 03:40:35,683] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:40:36,039] {logging_mixin.py:115} INFO - [2023-07-29 03:40:36,039] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:40:36,210] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.430 seconds
+[2023-07-29 03:40:47,581] {processor.py:153} INFO - Started process (PID=9205) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:47,588] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:40:47,591] {logging_mixin.py:115} INFO - [2023-07-29 03:40:47,590] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:48,554] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:48,574] {logging_mixin.py:115} INFO - [2023-07-29 03:40:48,573] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:40:48,612] {logging_mixin.py:115} INFO - [2023-07-29 03:40:48,612] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:40:48,655] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.090 seconds
+[2023-07-29 03:40:58,808] {processor.py:153} INFO - Started process (PID=9217) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:58,818] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:40:58,821] {logging_mixin.py:115} INFO - [2023-07-29 03:40:58,821] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:59,631] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:40:59,757] {logging_mixin.py:115} INFO - [2023-07-29 03:40:59,756] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:40:59,795] {logging_mixin.py:115} INFO - [2023-07-29 03:40:59,795] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:40:59,816] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.031 seconds
+[2023-07-29 03:41:09,934] {processor.py:153} INFO - Started process (PID=9229) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:09,937] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:41:09,940] {logging_mixin.py:115} INFO - [2023-07-29 03:41:09,940] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:10,885] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:10,906] {logging_mixin.py:115} INFO - [2023-07-29 03:41:10,906] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:41:10,948] {logging_mixin.py:115} INFO - [2023-07-29 03:41:10,948] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:41:10,966] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.039 seconds
+[2023-07-29 03:41:21,107] {processor.py:153} INFO - Started process (PID=9244) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:21,111] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:41:21,118] {logging_mixin.py:115} INFO - [2023-07-29 03:41:21,116] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:21,871] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:21,892] {logging_mixin.py:115} INFO - [2023-07-29 03:41:21,891] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:41:21,942] {logging_mixin.py:115} INFO - [2023-07-29 03:41:21,942] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:41:21,964] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.863 seconds
+[2023-07-29 03:41:32,115] {processor.py:153} INFO - Started process (PID=9256) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:32,119] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:41:32,125] {logging_mixin.py:115} INFO - [2023-07-29 03:41:32,125] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:32,843] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:32,965] {logging_mixin.py:115} INFO - [2023-07-29 03:41:32,964] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:41:33,002] {logging_mixin.py:115} INFO - [2023-07-29 03:41:33,002] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:41:33,027] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.919 seconds
+[2023-07-29 03:41:43,199] {processor.py:153} INFO - Started process (PID=9268) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:43,205] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:41:43,208] {logging_mixin.py:115} INFO - [2023-07-29 03:41:43,208] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:44,170] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:44,214] {logging_mixin.py:115} INFO - [2023-07-29 03:41:44,212] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:41:44,278] {logging_mixin.py:115} INFO - [2023-07-29 03:41:44,278] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:41:44,306] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.116 seconds
+[2023-07-29 03:41:54,438] {processor.py:153} INFO - Started process (PID=9280) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:54,450] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:41:54,454] {logging_mixin.py:115} INFO - [2023-07-29 03:41:54,454] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:55,573] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:41:55,792] {logging_mixin.py:115} INFO - [2023-07-29 03:41:55,791] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:41:55,940] {logging_mixin.py:115} INFO - [2023-07-29 03:41:55,940] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:41:56,006] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.587 seconds
+[2023-07-29 03:42:06,279] {processor.py:153} INFO - Started process (PID=9292) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:06,283] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:42:06,286] {logging_mixin.py:115} INFO - [2023-07-29 03:42:06,285] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:07,218] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:07,313] {logging_mixin.py:115} INFO - [2023-07-29 03:42:07,313] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:42:07,349] {logging_mixin.py:115} INFO - [2023-07-29 03:42:07,349] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:42:07,372] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.099 seconds
+[2023-07-29 03:42:17,515] {processor.py:153} INFO - Started process (PID=9304) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:17,518] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:42:17,521] {logging_mixin.py:115} INFO - [2023-07-29 03:42:17,521] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:18,126] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:18,147] {logging_mixin.py:115} INFO - [2023-07-29 03:42:18,146] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:42:18,185] {logging_mixin.py:115} INFO - [2023-07-29 03:42:18,184] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:42:18,203] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.695 seconds
+[2023-07-29 03:42:28,436] {processor.py:153} INFO - Started process (PID=9316) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:28,440] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:42:28,442] {logging_mixin.py:115} INFO - [2023-07-29 03:42:28,442] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:29,035] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:29,055] {logging_mixin.py:115} INFO - [2023-07-29 03:42:29,055] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:42:29,090] {logging_mixin.py:115} INFO - [2023-07-29 03:42:29,090] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:42:29,111] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.688 seconds
+[2023-07-29 03:42:39,215] {processor.py:153} INFO - Started process (PID=9328) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:39,218] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:42:39,222] {logging_mixin.py:115} INFO - [2023-07-29 03:42:39,222] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:39,865] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:39,960] {logging_mixin.py:115} INFO - [2023-07-29 03:42:39,960] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:42:39,992] {logging_mixin.py:115} INFO - [2023-07-29 03:42:39,992] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:42:40,014] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.805 seconds
+[2023-07-29 03:42:50,672] {processor.py:153} INFO - Started process (PID=9340) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:50,678] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:42:50,681] {logging_mixin.py:115} INFO - [2023-07-29 03:42:50,681] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:51,738] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:42:51,759] {logging_mixin.py:115} INFO - [2023-07-29 03:42:51,759] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:42:51,800] {logging_mixin.py:115} INFO - [2023-07-29 03:42:51,799] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:42:51,833] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.166 seconds
+[2023-07-29 03:43:02,107] {processor.py:153} INFO - Started process (PID=9352) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:02,111] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:43:02,114] {logging_mixin.py:115} INFO - [2023-07-29 03:43:02,114] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:03,521] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:03,545] {logging_mixin.py:115} INFO - [2023-07-29 03:43:03,544] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:43:03,590] {logging_mixin.py:115} INFO - [2023-07-29 03:43:03,590] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:43:03,611] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.519 seconds
+[2023-07-29 03:43:13,720] {processor.py:153} INFO - Started process (PID=9364) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:13,723] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:43:13,726] {logging_mixin.py:115} INFO - [2023-07-29 03:43:13,726] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:14,358] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:14,450] {logging_mixin.py:115} INFO - [2023-07-29 03:43:14,449] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:43:14,484] {logging_mixin.py:115} INFO - [2023-07-29 03:43:14,483] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:43:14,505] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.792 seconds
+[2023-07-29 03:43:24,624] {processor.py:153} INFO - Started process (PID=9376) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:24,628] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:43:24,631] {logging_mixin.py:115} INFO - [2023-07-29 03:43:24,631] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:25,274] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:25,311] {logging_mixin.py:115} INFO - [2023-07-29 03:43:25,310] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:43:25,390] {logging_mixin.py:115} INFO - [2023-07-29 03:43:25,390] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:43:25,413] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.801 seconds
+[2023-07-29 03:43:36,034] {processor.py:153} INFO - Started process (PID=9391) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:36,039] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:43:36,042] {logging_mixin.py:115} INFO - [2023-07-29 03:43:36,042] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:37,144] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:37,164] {logging_mixin.py:115} INFO - [2023-07-29 03:43:37,164] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:43:37,198] {logging_mixin.py:115} INFO - [2023-07-29 03:43:37,198] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:43:37,217] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.188 seconds
+[2023-07-29 03:43:47,344] {processor.py:153} INFO - Started process (PID=9406) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:47,348] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:43:47,352] {logging_mixin.py:115} INFO - [2023-07-29 03:43:47,352] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:48,215] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:48,302] {logging_mixin.py:115} INFO - [2023-07-29 03:43:48,302] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:43:48,337] {logging_mixin.py:115} INFO - [2023-07-29 03:43:48,337] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:43:48,357] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.021 seconds
+[2023-07-29 03:43:58,462] {processor.py:153} INFO - Started process (PID=9418) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:58,465] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:43:58,468] {logging_mixin.py:115} INFO - [2023-07-29 03:43:58,468] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:59,027] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:43:59,049] {logging_mixin.py:115} INFO - [2023-07-29 03:43:59,048] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:43:59,086] {logging_mixin.py:115} INFO - [2023-07-29 03:43:59,086] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:43:59,105] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.648 seconds
+[2023-07-29 03:44:09,224] {processor.py:153} INFO - Started process (PID=9430) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:09,230] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:44:09,233] {logging_mixin.py:115} INFO - [2023-07-29 03:44:09,233] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:09,983] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:10,025] {logging_mixin.py:115} INFO - [2023-07-29 03:44:10,024] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:44:10,076] {logging_mixin.py:115} INFO - [2023-07-29 03:44:10,075] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:44:10,101] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.884 seconds
+[2023-07-29 03:44:20,298] {processor.py:153} INFO - Started process (PID=9442) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:20,301] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:44:20,306] {logging_mixin.py:115} INFO - [2023-07-29 03:44:20,306] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:20,906] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:20,996] {logging_mixin.py:115} INFO - [2023-07-29 03:44:20,996] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:44:21,029] {logging_mixin.py:115} INFO - [2023-07-29 03:44:21,028] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:44:21,051] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.769 seconds
+[2023-07-29 03:44:31,409] {processor.py:153} INFO - Started process (PID=9454) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:31,413] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:44:31,417] {logging_mixin.py:115} INFO - [2023-07-29 03:44:31,416] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:32,011] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:32,032] {logging_mixin.py:115} INFO - [2023-07-29 03:44:32,031] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:44:32,067] {logging_mixin.py:115} INFO - [2023-07-29 03:44:32,067] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:44:32,086] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.683 seconds
+[2023-07-29 03:44:42,197] {processor.py:153} INFO - Started process (PID=9466) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:42,201] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:44:42,205] {logging_mixin.py:115} INFO - [2023-07-29 03:44:42,205] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:42,831] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:42,869] {logging_mixin.py:115} INFO - [2023-07-29 03:44:42,868] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:44:42,926] {logging_mixin.py:115} INFO - [2023-07-29 03:44:42,926] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:44:42,946] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.755 seconds
+[2023-07-29 03:44:53,077] {processor.py:153} INFO - Started process (PID=9478) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:53,081] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:44:53,087] {logging_mixin.py:115} INFO - [2023-07-29 03:44:53,087] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:53,705] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:44:53,740] {logging_mixin.py:115} INFO - [2023-07-29 03:44:53,739] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:44:53,776] {logging_mixin.py:115} INFO - [2023-07-29 03:44:53,775] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:44:53,794] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.741 seconds
+[2023-07-29 03:45:03,903] {processor.py:153} INFO - Started process (PID=9490) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:45:03,906] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:45:03,909] {logging_mixin.py:115} INFO - [2023-07-29 03:45:03,909] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:45:04,515] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:45:04,606] {logging_mixin.py:115} INFO - [2023-07-29 03:45:04,605] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:45:04,638] {logging_mixin.py:115} INFO - [2023-07-29 03:45:04,637] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:45:04,660] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.762 seconds
+[2023-07-29 03:45:14,764] {processor.py:153} INFO - Started process (PID=9502) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:45:14,767] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:45:14,773] {logging_mixin.py:115} INFO - [2023-07-29 03:45:14,772] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:45:15,963] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:45:15,985] {logging_mixin.py:115} INFO - [2023-07-29 03:45:15,984] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:45:16,019] {logging_mixin.py:115} INFO - [2023-07-29 03:45:16,019] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:45:16,037] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 1.279 seconds
+[2023-07-29 03:45:26,811] {processor.py:153} INFO - Started process (PID=9514) to work on /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:45:26,815] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_etl_paises.py for tasks to queue
+[2023-07-29 03:45:26,818] {logging_mixin.py:115} INFO - [2023-07-29 03:45:26,818] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:45:27,460] {processor.py:651} INFO - DAG(s) dict_keys(['dag_etl_paises']) retrieved from /opt/airflow/dags/dag_etl_paises.py
+[2023-07-29 03:45:27,481] {logging_mixin.py:115} INFO - [2023-07-29 03:45:27,480] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-07-29 03:45:27,528] {logging_mixin.py:115} INFO - [2023-07-29 03:45:27,527] {dag.py:2972} INFO - Setting next_dagrun for dag_etl_paises to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-29 03:45:27,548] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_etl_paises.py took 0.743 seconds
