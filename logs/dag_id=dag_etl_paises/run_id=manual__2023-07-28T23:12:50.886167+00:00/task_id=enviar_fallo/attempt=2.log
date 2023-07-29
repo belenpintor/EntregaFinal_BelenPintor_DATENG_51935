@@ -1,0 +1,46 @@
+[2023-07-28 23:15:13,615] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_etl_paises.enviar_fallo manual__2023-07-28T23:12:50.886167+00:00 [queued]>
+[2023-07-28 23:15:14,417] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_etl_paises.enviar_fallo manual__2023-07-28T23:12:50.886167+00:00 [queued]>
+[2023-07-28 23:15:14,550] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-28 23:15:14,586] {taskinstance.py:1377} INFO - Starting attempt 2 of 2
+[2023-07-28 23:15:14,588] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-28 23:15:15,348] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): enviar_fallo> on 2023-07-28 23:12:50.886167+00:00
+[2023-07-28 23:15:15,603] {standard_task_runner.py:52} INFO - Started process 342 to run task
+[2023-07-28 23:15:15,992] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_etl_paises', 'enviar_fallo', 'manual__2023-07-28T23:12:50.886167+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_paises.py', '--cfg-path', '/tmp/tmpstlo_01x', '--error-file', '/tmp/tmp2pw1oq8z']
+[2023-07-28 23:15:16,065] {standard_task_runner.py:80} INFO - Job 21: Subtask enviar_fallo
+[2023-07-28 23:15:17,196] {task_command.py:371} INFO - Running <TaskInstance: dag_etl_paises.enviar_fallo manual__2023-07-28T23:12:50.886167+00:00 [running]> on host 068a3bc06d1c
+[2023-07-28 23:15:18,945] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Belenpintor
+AIRFLOW_CTX_DAG_ID=dag_etl_paises
+AIRFLOW_CTX_TASK_ID=enviar_fallo
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-28T23:12:50.886167+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-28T23:12:50.886167+00:00
+[2023-07-28 23:15:19,054] {logging_mixin.py:115} INFO - [Errno -2] Name or service not known
+[2023-07-28 23:15:19,062] {logging_mixin.py:115} INFO - Failure
+[2023-07-28 23:15:19,065] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/script_etl.py", line 116, in enviar_fallo
+    raise exception
+  File "/opt/airflow/dags/script_etl.py", line 105, in enviar_fallo
+    x=smtplib.SMTP(Variable.get("SMTP_HOST"),Variable.get("SMTP_PORT"))
+  File "/usr/local/lib/python3.7/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.7/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.7/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.7/socket.py", line 707, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/local/lib/python3.7/socket.py", line 752, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+[2023-07-28 23:15:19,228] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=dag_etl_paises, task_id=enviar_fallo, execution_date=20230728T231250, start_date=20230728T231513, end_date=20230728T231519
+[2023-07-28 23:15:19,327] {standard_task_runner.py:97} ERROR - Failed to execute job 21 for task enviar_fallo ([Errno -2] Name or service not known; 342)
+[2023-07-28 23:15:19,391] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-07-28 23:15:19,794] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,304 @@
+[2023-07-29 02:00:23,292] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_etl_paises.transformar_datos manual__2023-07-29T01:58:34.803527+00:00 [queued]>
+[2023-07-29 02:00:23,338] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_etl_paises.transformar_datos manual__2023-07-29T01:58:34.803527+00:00 [queued]>
+[2023-07-29 02:00:23,340] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29 02:00:23,342] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-07-29 02:00:23,344] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29 02:00:23,402] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): transformar_datos> on 2023-07-29 01:58:34.803527+00:00
+[2023-07-29 02:00:23,415] {standard_task_runner.py:52} INFO - Started process 2811 to run task
+[2023-07-29 02:00:23,434] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_etl_paises', 'transformar_datos', 'manual__2023-07-29T01:58:34.803527+00:00', '--job-id', '75', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_paises.py', '--cfg-path', '/tmp/tmp_9rvl_wc', '--error-file', '/tmp/tmpqjykvnv2']
+[2023-07-29 02:00:23,441] {standard_task_runner.py:80} INFO - Job 75: Subtask transformar_datos
+[2023-07-29 02:00:23,702] {task_command.py:371} INFO - Running <TaskInstance: dag_etl_paises.transformar_datos manual__2023-07-29T01:58:34.803527+00:00 [running]> on host 068a3bc06d1c
+[2023-07-29 02:00:24,361] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Belenpintor
+AIRFLOW_CTX_DAG_ID=dag_etl_paises
+AIRFLOW_CTX_TASK_ID=transformar_datos
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-29T01:58:34.803527+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-29T01:58:34.803527+00:00
+[2023-07-29 02:00:24,606] {logging_mixin.py:115} INFO - asi el dataframe nombre         Business Freedom  Commute  ...  Travel Connectivity  Venture Capital
+ciudad_nombre                             ...                                      
+Aarhus                 9.940000  6.31175  ...               3.5360            2.512
+Adelaide               9.399667  5.33625  ...               1.7765            2.640
+Albuquerque            8.671000  5.05575  ...               1.4555            1.493
+Almaty                 5.568000  5.87125  ...               4.5920            0.000
+Amsterdam              8.836667  6.11850  ...               8.3245            6.107
+...                         ...      ...  ...                  ...              ...
+Winnipeg               8.966000  5.10450  ...               1.4755            0.000
+Wroclaw                5.704333  4.95475  ...               2.2445            2.386
+Yerevan                6.501000  5.64925  ...               1.7870            0.000
+Zagreb                 5.720333  4.83000  ...               2.0280            1.775
+Zurich                 8.888000  5.83950  ...               7.7335            3.872
+
+[266 rows x 17 columns]
+[2023-07-29 02:00:26,442] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:26,938] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:27,423] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:27,921] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:28,409] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:28,902] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:29,381] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:29,872] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:30,394] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:30,920] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:31,409] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:31,904] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:32,384] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:32,875] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:33,360] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:33,851] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:34,337] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:34,837] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:35,332] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:35,829] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:36,373] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:36,866] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:37,351] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:37,840] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:38,345] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:39,559] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:41,005] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:41,700] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:43,225] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:44,687] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:45,219] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:45,706] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:46,356] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:46,846] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:47,337] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:47,827] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:48,308] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:48,809] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:49,334] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:49,857] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:50,363] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:50,962] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:51,608] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:52,113] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:52,605] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:53,099] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:53,587] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:54,094] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:54,605] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:55,124] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:55,619] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:56,119] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:56,621] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:57,113] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:57,625] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:58,119] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:58,625] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:59,120] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:00:59,606] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:00,099] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:00,606] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:01,197] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:01,698] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:02,205] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:02,693] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:03,195] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:03,689] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:04,215] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:04,713] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:05,213] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:05,698] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:06,193] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:06,679] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:07,225] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:07,763] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:08,274] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:08,772] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:09,295] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:09,781] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:10,278] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:10,771] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:11,279] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:11,766] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:12,258] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:12,747] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:13,248] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:13,728] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:14,219] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:14,709] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:15,208] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:15,695] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:16,180] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:16,671] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:17,188] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:17,714] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:18,217] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:18,733] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:19,257] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:19,751] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:20,242] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:20,723] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:21,226] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:21,713] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:22,250] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:22,732] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:23,222] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:23,706] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:24,216] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:24,736] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:25,259] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:25,769] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:26,262] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:26,767] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:27,301] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:27,784] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:28,280] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:28,776] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:29,291] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:29,779] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:30,294] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:30,795] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:31,297] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:31,833] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:32,338] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:32,831] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:33,352] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:33,966] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:34,491] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:34,981] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:35,479] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:35,991] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:36,492] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:37,070] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:37,647] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:38,140] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:38,647] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:39,136] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:39,631] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:40,114] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:40,615] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:41,099] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:41,590] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:42,085] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:42,577] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:43,062] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:43,572] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:44,057] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:44,557] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:45,051] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:45,544] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:46,041] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:46,550] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:47,038] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:47,536] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:48,046] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:48,545] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:49,039] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:49,662] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:50,158] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:50,656] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:51,146] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:51,639] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:52,127] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:52,617] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:53,107] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:53,603] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:54,100] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:54,603] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:55,100] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:55,593] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:56,080] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:56,588] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:57,111] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:57,616] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:58,108] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:58,604] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:59,087] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:01:59,581] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:00,093] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:00,593] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:01,074] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:01,568] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:02,050] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:02,556] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:03,056] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:03,570] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:04,065] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:04,569] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:05,055] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:05,551] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:06,455] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:06,957] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:07,449] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:07,945] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:08,431] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:08,927] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:09,421] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:09,917] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:10,402] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:10,901] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:11,404] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:11,920] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:12,430] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:12,924] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:13,412] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:13,931] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:14,424] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:14,915] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:15,415] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:15,948] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:16,438] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:16,939] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:17,431] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:17,925] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:18,410] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:18,903] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:19,391] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:19,888] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:20,379] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:20,876] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:21,369] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:21,884] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:22,371] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:22,863] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:23,352] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:23,839] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:24,321] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:24,818] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:25,301] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:25,793] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:26,277] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:26,779] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:27,268] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:27,765] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:28,250] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:28,747] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:29,233] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:29,747] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:30,254] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:30,752] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:31,235] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:31,728] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:32,230] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:32,749] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:33,234] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:33,729] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:34,381] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:34,933] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:35,426] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:35,925] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:36,420] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:36,927] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:37,421] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:37,953] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:38,530] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:39,031] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:39,536] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:40,035] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:40,524] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:41,027] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:41,590] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:42,102] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:42,589] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:43,093] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:43,576] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:44,095] {logging_mixin.py:115} INFO - listo comit
+[2023-07-29 02:02:44,103] {python.py:173} INFO - Done. Returned value was: None
+[2023-07-29 02:02:44,278] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dag_etl_paises, task_id=transformar_datos, execution_date=20230729T015834, start_date=20230729T020023, end_date=20230729T020244
+[2023-07-29 02:02:44,398] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-07-29 02:02:44,517] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

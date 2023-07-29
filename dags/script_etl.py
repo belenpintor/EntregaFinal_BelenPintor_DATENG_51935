@@ -8,34 +8,34 @@ from airflow.hooks.base_hook import BaseHook
 from email import message
 from datetime import datetime, timedelta
 import smtplib
+import json
 
 from os import environ as env
 
 insert_query_with_columns = """
-        INSERT INTO bapintor_coderhouse.ciudades (
-            city,
-            "Business Freedom",
-            "Commute",
-            "Cost of Living",
-            "Economy",
-            "Education",
-            "Environmental Quality",
-            "Healthcare",
-            "Housing",
-            "Internet Access",
-            "Leisure & Culture",
-            "Outdoors",
-            "Safety",
-            "Startups",
-            "Taxation",
-            "Tolerance",
-            "Travel Connectivity",
-            "Venture Capital",
-            "process_date"
-        ) VALUES (
-            %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
-        )
-    """
+    INSERT INTO bapintor_coderhouse.ciudades (
+        city,
+        "Business Freedom",
+        "Commute",
+        "Cost of Living",
+        "Economy",
+        "Education",
+        "Environmental Quality",
+        "Healthcare",
+        "Housing",
+        "Internet Access",
+        "Leisure & Culture",
+        "Outdoors",
+        "Safety",
+        "Startups",
+        "Taxation",
+        "Tolerance",
+        "Travel Connectivity",
+        "Venture Capital",
+        "process_date")
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+"""
 
 
 
@@ -98,7 +98,28 @@ def transform_data(ciudades_data):
             print("Error:", str(e))
 
     connection.close()
-    
+
+
+def enviar_alerta(ciudad, categoria, valor, min_t, max_t, is_under_threshold):
+    try:
+        x = smtplib.SMTP(Variable.get("SMTP_HOST"), Variable.get("SMTP_PORT"))
+        x.starttls()
+        x.login(Variable.get('SMTP_EMAIL_FROM'), Variable.get('SMTP_PASSWORD'))
+
+        subject = f'ALERTA DE UMBRAL - {ciudad}'
+        body_text = (
+            f"El valor de la categoría '{categoria}' en la ciudad '{ciudad}' es {valor}, "
+            f"que es {'menor' if is_under_threshold else 'mayor'} que el umbral "
+            f"{'mínimo' if is_under_threshold else 'máximo'} ({min_t if is_under_threshold else max_t})."
+        )
+        message = f'Subject: {subject}\n\n{body_text}'
+        x.sendmail(Variable.get('SMTP_EMAIL_FROM'), Variable.get('SMTP_EMAIL_TO'), message)
+
+        print('Exito')
+    except Exception as exception:
+        print("Fallo: ",exception)
+        raise exception
+
     
 def enviar_fallo():
     try:

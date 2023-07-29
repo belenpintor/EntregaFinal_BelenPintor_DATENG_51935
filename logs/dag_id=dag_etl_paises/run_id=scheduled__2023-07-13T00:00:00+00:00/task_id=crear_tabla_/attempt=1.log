@@ -1,0 +1,46 @@
+[2023-07-28 22:13:48,216] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_etl_paises.crear_tabla_ scheduled__2023-07-13T00:00:00+00:00 [queued]>
+[2023-07-28 22:13:48,550] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_etl_paises.crear_tabla_ scheduled__2023-07-13T00:00:00+00:00 [queued]>
+[2023-07-28 22:13:48,563] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-28 22:13:48,572] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-07-28 22:13:48,580] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-28 22:13:49,684] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): crear_tabla_> on 2023-07-13 00:00:00+00:00
+[2023-07-28 22:13:49,881] {standard_task_runner.py:52} INFO - Started process 974 to run task
+[2023-07-28 22:13:50,116] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_etl_paises', 'crear_tabla_', 'scheduled__2023-07-13T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_paises.py', '--cfg-path', '/tmp/tmpvaf8cxc1', '--error-file', '/tmp/tmp0hhxf4sj']
+[2023-07-28 22:13:50,154] {standard_task_runner.py:80} INFO - Job 7: Subtask crear_tabla_
+[2023-07-28 22:13:52,439] {task_command.py:371} INFO - Running <TaskInstance: dag_etl_paises.crear_tabla_ scheduled__2023-07-13T00:00:00+00:00 [running]> on host 42f90387d6b2
+[2023-07-28 22:13:55,605] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Belenpintor
+AIRFLOW_CTX_DAG_ID=dag_etl_paises
+AIRFLOW_CTX_TASK_ID=crear_tabla_
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-13T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-13T00:00:00+00:00
+[2023-07-28 22:13:56,345] {base.py:68} INFO - Using connection ID 'redshift_belen' for task execution.
+[2023-07-28 22:13:57,467] {dbapi.py:231} INFO - Running statement: 
+CREATE TABLE IF NOT EXISTS bapintor_coderhouse.ciudades (
+    city VARCHAR PRIMARY KEY,
+    "Housing" DECIMAL(10, 2),
+    "Cost of Living" DECIMAL(10, 2),
+    "Startups" DECIMAL(10, 2),
+    "Venture Capital" DECIMAL(10, 2),
+    "Travel Connectivity" DECIMAL(10, 2),
+    "Commute" DECIMAL(10, 2),
+    "Business Freedom" DECIMAL(10, 2),
+    "Safety" DECIMAL(10, 2),
+    "Healthcare" DECIMAL(10, 2),
+    "Education" DECIMAL(10, 2),
+    "Environmental Quality" DECIMAL(10, 2),
+    "Economy" DECIMAL(10, 2),
+    "Taxation" DECIMAL(10, 2),
+    "Internet Access" DECIMAL(10, 2),
+    "Leisure & Culture" DECIMAL(10, 2),
+    "Tolerance" DECIMAL(10, 2),
+    "Outdoors" DECIMAL(10, 2),
+    "process_date" DATETIME DISTKEY
+);, parameters: None
+[2023-07-28 22:13:57,654] {postgres.py:94} INFO - INFO:  Relation "ciudades" already exists and will be skipped
+
+[2023-07-28 22:13:58,320] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dag_etl_paises, task_id=crear_tabla_, execution_date=20230713T000000, start_date=20230728T221348, end_date=20230728T221358
+[2023-07-28 22:14:00,474] {local_task_job.py:156} INFO - Task exited with return code 0

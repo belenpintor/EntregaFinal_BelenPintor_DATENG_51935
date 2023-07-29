@@ -61,7 +61,6 @@ x-airflow-common:
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
-    - ./scripts:/opt/airflow/scripts
     - ./plugins:/opt/airflow/plugins
     - ./requirements.txt:/requirements.txt
     - ./dags/.env:/opt/airflow/dags/.env
@@ -92,9 +91,6 @@ services:
     command: webserver
     ports:
       - 8080:8080
-    volumes:
-      - ./airflow.cfg:/opt/airflow/airflow.cfg 
-      - ./config/airflow.cfg:/opt/airflow/airflow.cfg
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
       interval: 10s

@@ -1,0 +1,32 @@
+[2023-07-29 00:33:54,213] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_etl_paises.verificar_threshold manual__2023-07-29T00:29:50.586518+00:00 [queued]>
+[2023-07-29 00:33:54,270] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_etl_paises.verificar_threshold manual__2023-07-29T00:29:50.586518+00:00 [queued]>
+[2023-07-29 00:33:54,272] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29 00:33:54,275] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-07-29 00:33:54,279] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29 00:33:54,370] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): verificar_threshold> on 2023-07-29 00:29:50.586518+00:00
+[2023-07-29 00:33:54,386] {standard_task_runner.py:52} INFO - Started process 3905 to run task
+[2023-07-29 00:33:54,415] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_etl_paises', 'verificar_threshold', 'manual__2023-07-29T00:29:50.586518+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_paises.py', '--cfg-path', '/tmp/tmp3_56fkox', '--error-file', '/tmp/tmpzu_9kj_j']
+[2023-07-29 00:33:54,423] {standard_task_runner.py:80} INFO - Job 54: Subtask verificar_threshold
+[2023-07-29 00:33:55,008] {task_command.py:371} INFO - Running <TaskInstance: dag_etl_paises.verificar_threshold manual__2023-07-29T00:29:50.586518+00:00 [running]> on host 068a3bc06d1c
+[2023-07-29 00:33:55,384] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Belenpintor
+AIRFLOW_CTX_DAG_ID=dag_etl_paises
+AIRFLOW_CTX_TASK_ID=verificar_threshold
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-29T00:29:50.586518+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-29T00:29:50.586518+00:00
+[2023-07-29 00:33:55,390] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag_etl_paises.py", line 39, in verificar_threshold
+    connection = context['ti'].get_hook('postgres_conn_id').get_conn()
+AttributeError: 'TaskInstance' object has no attribute 'get_hook'
+[2023-07-29 00:33:55,420] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_etl_paises, task_id=verificar_threshold, execution_date=20230729T002950, start_date=20230729T003354, end_date=20230729T003355
+[2023-07-29 00:33:55,474] {standard_task_runner.py:97} ERROR - Failed to execute job 54 for task verificar_threshold ('TaskInstance' object has no attribute 'get_hook'; 3905)
+[2023-07-29 00:33:55,556] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-07-29 00:33:55,719] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

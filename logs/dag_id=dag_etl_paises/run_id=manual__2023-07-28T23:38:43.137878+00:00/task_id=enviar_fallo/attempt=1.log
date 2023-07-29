@@ -1,0 +1,24 @@
+[2023-07-28 23:38:49,660] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_etl_paises.enviar_fallo manual__2023-07-28T23:38:43.137878+00:00 [queued]>
+[2023-07-28 23:38:49,731] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_etl_paises.enviar_fallo manual__2023-07-28T23:38:43.137878+00:00 [queued]>
+[2023-07-28 23:38:49,734] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-28 23:38:49,740] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-07-28 23:38:49,742] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-28 23:38:49,835] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): enviar_fallo> on 2023-07-28 23:38:43.137878+00:00
+[2023-07-28 23:38:49,846] {standard_task_runner.py:52} INFO - Started process 1818 to run task
+[2023-07-28 23:38:49,869] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_etl_paises', 'enviar_fallo', 'manual__2023-07-28T23:38:43.137878+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_paises.py', '--cfg-path', '/tmp/tmpmfhl9shy', '--error-file', '/tmp/tmpbu8tutv9']
+[2023-07-28 23:38:49,877] {standard_task_runner.py:80} INFO - Job 41: Subtask enviar_fallo
+[2023-07-28 23:38:50,147] {task_command.py:371} INFO - Running <TaskInstance: dag_etl_paises.enviar_fallo manual__2023-07-28T23:38:43.137878+00:00 [running]> on host 068a3bc06d1c
+[2023-07-28 23:38:50,446] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Belenpintor
+AIRFLOW_CTX_DAG_ID=dag_etl_paises
+AIRFLOW_CTX_TASK_ID=enviar_fallo
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-28T23:38:43.137878+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-28T23:38:43.137878+00:00
+[2023-07-28 23:38:52,986] {logging_mixin.py:115} INFO - Exito
+[2023-07-28 23:38:52,990] {python.py:173} INFO - Done. Returned value was: None
+[2023-07-28 23:38:53,030] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dag_etl_paises, task_id=enviar_fallo, execution_date=20230728T233843, start_date=20230728T233849, end_date=20230728T233853
+[2023-07-28 23:38:53,170] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-07-28 23:38:53,301] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

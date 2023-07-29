@@ -1,0 +1,33 @@
+[2023-07-29 02:36:07,358] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_etl_paises.verificar_threshold manual__2023-07-29T02:31:58.491153+00:00 [queued]>
+[2023-07-29 02:36:07,387] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_etl_paises.verificar_threshold manual__2023-07-29T02:31:58.491153+00:00 [queued]>
+[2023-07-29 02:36:07,388] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29 02:36:07,391] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-07-29 02:36:07,393] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29 02:36:07,422] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): verificar_threshold> on 2023-07-29 02:31:58.491153+00:00
+[2023-07-29 02:36:07,430] {standard_task_runner.py:52} INFO - Started process 5103 to run task
+[2023-07-29 02:36:07,440] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_etl_paises', 'verificar_threshold', 'manual__2023-07-29T02:31:58.491153+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_paises.py', '--cfg-path', '/tmp/tmpx4f0j1z_', '--error-file', '/tmp/tmphx01nlw5']
+[2023-07-29 02:36:07,445] {standard_task_runner.py:80} INFO - Job 91: Subtask verificar_threshold
+[2023-07-29 02:36:07,587] {task_command.py:371} INFO - Running <TaskInstance: dag_etl_paises.verificar_threshold manual__2023-07-29T02:31:58.491153+00:00 [running]> on host 068a3bc06d1c
+[2023-07-29 02:36:07,745] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Belenpintor
+AIRFLOW_CTX_DAG_ID=dag_etl_paises
+AIRFLOW_CTX_TASK_ID=verificar_threshold
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-29T02:31:58.491153+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-29T02:31:58.491153+00:00
+[2023-07-29 02:36:07,769] {base.py:68} INFO - Using connection ID 'redshift_belen' for task execution.
+[2023-07-29 02:36:08,843] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag_etl_paises.py", line 44, in verificar_threshold
+    with open("config_threshold.json", 'r') as json_config:
+FileNotFoundError: [Errno 2] No such file or directory: 'config_threshold.json'
+[2023-07-29 02:36:08,898] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_etl_paises, task_id=verificar_threshold, execution_date=20230729T023158, start_date=20230729T023607, end_date=20230729T023608
+[2023-07-29 02:36:08,961] {standard_task_runner.py:97} ERROR - Failed to execute job 91 for task verificar_threshold ([Errno 2] No such file or directory: 'config_threshold.json'; 5103)
+[2023-07-29 02:36:09,075] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-07-29 02:36:09,264] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
